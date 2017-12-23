@@ -7,23 +7,23 @@
 //
 
 import UIKit
+import SigmaSwiftStatistics
 
 class MiscellaneousViewController: UIViewController {
     
+    var alertController:UIAlertController? = nil
     
-    @IBOutlet weak var theScrollView: UIScrollView!
+    @IBOutlet weak var currentInventoryLevel: UITextField!
+    @IBOutlet weak var currentNumLocations: UITextField!
+    @IBOutlet weak var projectedNumLocations: UITextField!
+    @IBOutlet weak var projectedInventoryLevel: UITextField!
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Miscellaneous"
+        self.navigationController?.navigationBar.topItem?.title = "Average Inventory Level"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Get the first (and only) subview of the scrollView.
-        let subview = theScrollView.subviews[0] as! UIView;
-        
-        //Make the scroll view's contentSize the same size as the content view.
-        theScrollView!.contentSize = subview.bounds.size;
         hideKeyboardWhenTappedAround()
 
         // Do any additional setup after loading the view.
@@ -34,7 +34,71 @@ class MiscellaneousViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func ailCalculateButtonPress(_ sender: Any) {
+        var blankButtonCheck: Bool = ailBlankCheck()
+        if blankButtonCheck == false {
+            self.alertController = UIAlertController(title: "Error", message: "Enter a value for all but one field; the blank field will be calculated", preferredStyle: UIAlertControllerStyle.alert)
+            
+            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
+            }
+            self.alertController!.addAction(OKAction)
+            self.present(self.alertController!, animated: true, completion:nil)
+        } else {
+            if currentInventoryLevel.text == "" {
+                // solve for current inventory level
+                
+                
+                
+            } else if currentNumLocations.text == "" {
+                // solve for current number of locations
+                
+                
+                
+            } else if projectedNumLocations.text == "" {
+                // solve for projected number of locations
+                
+                
+                
+            } else if projectedInventoryLevel.text == "" {
+                // solve for projected inventory level
+                var currentInventoryLevelDouble: Double = Double(currentInventoryLevel.text!)!
+                var currentNumLocationsDouble: Double = Double(currentNumLocations.text!)!
+                var projectedNumLocationsDouble: Double = Double(projectedNumLocations.text!)!
+                var projectedInventoryLevelDouble: Double
+                
+                projectedInventoryLevelDouble = currentInventoryLevelDouble * (projectedNumLocationsDouble/currentNumLocationsDouble).squareRoot()
+                projectedInventoryLevel.text = formatMathSolution(value: projectedInventoryLevelDouble)
+                
+            }
+        }
+    }
+    
+    
+    @IBAction func ailClearButtonPress(_ sender: Any) {
+        currentInventoryLevel.text = ""
+        currentNumLocations.text = ""
+        projectedNumLocations.text = ""
+        projectedInventoryLevel.text = ""
+    }
+    
+    func ailBlankCheck() -> Bool {
+        var blankCount: Int = 0
+        let ailOutletsArray = [currentInventoryLevel, currentNumLocations, projectedNumLocations, projectedInventoryLevel]
+        
+        for i in ailOutletsArray {
+            if i!.text == "" {
+                blankCount += 1
+            }
+        }
+        
+        print(blankCount)
+        if blankCount > 1 {
+            return false
+        } else {
+            return true
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
