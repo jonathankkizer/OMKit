@@ -19,29 +19,127 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OMKitImage" translatesAutoresizingMaskIntoConstraints="NO" id="FaK-dE-xym">
-                                <rect key="frame" x="16" y="397" width="288" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safety Stock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPd-TA-G0q">
+                                <rect key="frame" x="8" y="64" width="304" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="jYf-Oh-K4b"/>
+                                    <constraint firstAttribute="height" constant="45" id="aoh-6Z-8Mn"/>
                                 </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="OMKit is developed by Jonathan Kizer www.jonathankizer.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5SZ-rw-Xvx">
-                                <rect key="frame" x="16" y="450" width="288" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Note: Remember to keep the time unit constant throughout all input parameters. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ub6-N7-d5e">
+                                <rect key="frame" x="8" y="100" width="304" height="52"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="VPk-8k-KSD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncp-Le-eo1">
+                                <rect key="frame" x="8" y="147" width="304" height="179"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">The Economic Order Quantity balances holding costs and order costs in order to minimize the total cost. This implementation assumes a constant price, though price discounts at certain quantities can still be tested by (a.) solving for the optimal quantity at the discounted price, and (b.) finding the total cost of the price break point quantity.</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhB-hk-lbT">
+                                <rect key="frame" x="8" y="291" width="304" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4N-fC-E0J">
+                                <rect key="frame" x="8" y="314" width="304" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="zIz-UV-zdg"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="This app makes use of SigmaSwiftStatistics: www.github.com/evgenyneu/SigmaSwiftStatistics">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Jx-bD-qDE">
+                                <rect key="frame" x="8" y="434" width="288" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="uHc-J6-VK4"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="OMKit is developed by Jonathan Kizer www.jonathankizer.com">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OMKitImage" translatesAutoresizingMaskIntoConstraints="NO" id="eqA-5i-yVM">
+                                <rect key="frame" x="16" y="486" width="288" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="LRE-OE-Hv3"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fbl-C4-4jQ">
+                                <rect key="frame" x="8" y="375" width="296" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Nkd-pw-DqX"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Icons thanks to the Noun Project and artists Ari Setyo Wibowo, Vectors Market, Vladimir Belochkin, &amp; Eucalpy">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FaK-dE-xym" firstAttribute="trailing" secondItem="M8o-Rq-uPS" secondAttribute="trailingMargin" id="0Pj-fL-TJw"/>
-                            <constraint firstItem="FaK-dE-xym" firstAttribute="top" secondItem="pjh-qr-efB" secondAttribute="top" constant="333" id="PXR-kD-aCA"/>
-                            <constraint firstItem="FaK-dE-xym" firstAttribute="leading" secondItem="5SZ-rw-Xvx" secondAttribute="leading" id="PaM-SR-TkS"/>
-                            <constraint firstItem="FaK-dE-xym" firstAttribute="trailing" secondItem="5SZ-rw-Xvx" secondAttribute="trailing" id="Ug2-2p-1KU"/>
-                            <constraint firstItem="5SZ-rw-Xvx" firstAttribute="top" secondItem="FaK-dE-xym" secondAttribute="bottom" constant="8" symbolic="YES" id="aea-tf-TgW"/>
-                            <constraint firstItem="5SZ-rw-Xvx" firstAttribute="bottom" secondItem="pjh-qr-efB" secondAttribute="bottom" id="kBT-LR-ULd"/>
-                            <constraint firstItem="FaK-dE-xym" firstAttribute="leading" secondItem="M8o-Rq-uPS" secondAttribute="leadingMargin" id="pSu-O0-Crl"/>
+                            <constraint firstItem="ncp-Le-eo1" firstAttribute="top" secondItem="yPd-TA-G0q" secondAttribute="bottom" constant="38" id="8NJ-Sw-HAw"/>
+                            <constraint firstItem="eqA-5i-yVM" firstAttribute="leading" secondItem="M8o-Rq-uPS" secondAttribute="leadingMargin" id="Cyv-pA-ZfG"/>
+                            <constraint firstItem="Ub6-N7-d5e" firstAttribute="leading" secondItem="RhB-hk-lbT" secondAttribute="leading" id="DL4-d8-h8C"/>
+                            <constraint firstItem="eqA-5i-yVM" firstAttribute="top" secondItem="Fbl-C4-4jQ" secondAttribute="bottom" constant="44" id="GT2-Ac-5QX"/>
+                            <constraint firstItem="5Jx-bD-qDE" firstAttribute="top" secondItem="p4N-fC-E0J" secondAttribute="bottom" constant="52" id="JGz-VZ-daW"/>
+                            <constraint firstItem="yPd-TA-G0q" firstAttribute="leading" secondItem="pjh-qr-efB" secondAttribute="leading" constant="8" id="K18-aP-wAo"/>
+                            <constraint firstItem="ncp-Le-eo1" firstAttribute="trailing" secondItem="RhB-hk-lbT" secondAttribute="trailing" id="Lru-ad-iFN"/>
+                            <constraint firstItem="Fbl-C4-4jQ" firstAttribute="top" secondItem="ncp-Le-eo1" secondAttribute="bottom" constant="49" id="Obd-QV-S2M"/>
+                            <constraint firstItem="ncp-Le-eo1" firstAttribute="leading" secondItem="RhB-hk-lbT" secondAttribute="leading" id="Tmk-rk-KTg"/>
+                            <constraint firstItem="eqA-5i-yVM" firstAttribute="top" secondItem="5Jx-bD-qDE" secondAttribute="bottom" id="Xnn-Hk-u1V"/>
+                            <constraint firstItem="pjh-qr-efB" firstAttribute="trailing" secondItem="5Jx-bD-qDE" secondAttribute="trailing" constant="24" id="aWn-jJ-FBH"/>
+                            <constraint firstItem="Ub6-N7-d5e" firstAttribute="top" secondItem="pjh-qr-efB" secondAttribute="top" constant="36" id="bYo-K7-cKv"/>
+                            <constraint firstItem="Fbl-C4-4jQ" firstAttribute="trailing" secondItem="M8o-Rq-uPS" secondAttribute="trailingMargin" id="biC-5k-Dsa"/>
+                            <constraint firstItem="p4N-fC-E0J" firstAttribute="leading" secondItem="Fbl-C4-4jQ" secondAttribute="leading" id="e8E-yi-qI5"/>
+                            <constraint firstItem="RhB-hk-lbT" firstAttribute="trailing" secondItem="p4N-fC-E0J" secondAttribute="trailing" id="eoz-pZ-0by"/>
+                            <constraint firstItem="Fbl-C4-4jQ" firstAttribute="top" secondItem="RhB-hk-lbT" secondAttribute="bottom" constant="57" id="gVJ-mi-Bwk"/>
+                            <constraint firstItem="Fbl-C4-4jQ" firstAttribute="leading" secondItem="5Jx-bD-qDE" secondAttribute="leading" id="hpx-c6-YHd"/>
+                            <constraint firstItem="p4N-fC-E0J" firstAttribute="centerX" secondItem="eqA-5i-yVM" secondAttribute="centerX" id="jb1-2d-7nk"/>
+                            <constraint firstItem="Fbl-C4-4jQ" firstAttribute="trailing" secondItem="eqA-5i-yVM" secondAttribute="trailing" id="mAD-mU-gQJ"/>
+                            <constraint firstItem="Ub6-N7-d5e" firstAttribute="trailing" secondItem="RhB-hk-lbT" secondAttribute="trailing" id="mEb-ew-W3N"/>
+                            <constraint firstItem="eqA-5i-yVM" firstAttribute="bottom" secondItem="pjh-qr-efB" secondAttribute="bottom" id="oyo-Eq-rVH"/>
+                            <constraint firstItem="yPd-TA-G0q" firstAttribute="leading" secondItem="Ub6-N7-d5e" secondAttribute="leading" id="x6U-VU-ezo"/>
+                            <constraint firstItem="yPd-TA-G0q" firstAttribute="top" secondItem="pjh-qr-efB" secondAttribute="top" id="xAq-wt-yJ9"/>
+                            <constraint firstItem="yPd-TA-G0q" firstAttribute="trailing" secondItem="Ub6-N7-d5e" secondAttribute="trailing" id="xyH-hg-8mT"/>
+                            <constraint firstItem="RhB-hk-lbT" firstAttribute="leading" secondItem="p4N-fC-E0J" secondAttribute="leading" id="yzh-EJ-aom"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pjh-qr-efB"/>
                     </view>
@@ -451,29 +549,127 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OMKitImage" translatesAutoresizingMaskIntoConstraints="NO" id="xWA-OJ-hS3">
-                                <rect key="frame" x="16" y="397" width="288" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Inventory Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyv-kd-rtZ">
+                                <rect key="frame" x="8" y="64" width="304" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="38F-Gz-FDr"/>
+                                    <constraint firstAttribute="height" constant="45" id="uzt-On-bTr"/>
                                 </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="OMKit is developed by Jonathan Kizer www.jonathankizer.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Off-ol-Rjp">
-                                <rect key="frame" x="16" y="450" width="288" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Note: Remember to keep the time unit constant throughout all input parameters. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="59E-zX-vQv">
+                                <rect key="frame" x="8" y="100" width="304" height="52"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="xhL-xR-fEl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="laa-jj-XkH">
+                                <rect key="frame" x="8" y="147" width="304" height="179"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">The Economic Order Quantity balances holding costs and order costs in order to minimize the total cost. This implementation assumes a constant price, though price discounts at certain quantities can still be tested by (a.) solving for the optimal quantity at the discounted price, and (b.) finding the total cost of the price break point quantity.</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4r-1Z-y5r">
+                                <rect key="frame" x="8" y="291" width="304" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3mE-Rb-Z1p">
+                                <rect key="frame" x="8" y="314" width="304" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Ugn-zk-S8H"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="This app makes use of SigmaSwiftStatistics: www.github.com/evgenyneu/SigmaSwiftStatistics">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09N-m0-kEh">
+                                <rect key="frame" x="8" y="434" width="288" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="uji-um-gLo"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="OMKit is developed by Jonathan Kizer www.jonathankizer.com">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OMKitImage" translatesAutoresizingMaskIntoConstraints="NO" id="8eQ-RD-Wui">
+                                <rect key="frame" x="16" y="486" width="288" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="mEf-Pq-MVm"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cc6-4T-FN1">
+                                <rect key="frame" x="8" y="375" width="296" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Bdc-Fx-xZI"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Icons thanks to the Noun Project and artists Ari Setyo Wibowo, Vectors Market, Vladimir Belochkin, &amp; Eucalpy">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Off-ol-Rjp" firstAttribute="bottom" secondItem="crO-jm-lvY" secondAttribute="bottom" id="EGB-Qo-eRr"/>
-                            <constraint firstItem="xWA-OJ-hS3" firstAttribute="leading" secondItem="fSe-L2-PmV" secondAttribute="leadingMargin" id="GGq-tG-Pb4"/>
-                            <constraint firstItem="xWA-OJ-hS3" firstAttribute="leading" secondItem="Off-ol-Rjp" secondAttribute="leading" id="OPM-1q-qZW"/>
-                            <constraint firstItem="xWA-OJ-hS3" firstAttribute="trailing" secondItem="Off-ol-Rjp" secondAttribute="trailing" id="Xf1-DY-7hq"/>
-                            <constraint firstItem="xWA-OJ-hS3" firstAttribute="trailing" secondItem="fSe-L2-PmV" secondAttribute="trailingMargin" id="Z2c-8O-hrv"/>
-                            <constraint firstItem="Off-ol-Rjp" firstAttribute="top" secondItem="xWA-OJ-hS3" secondAttribute="bottom" constant="8" symbolic="YES" id="jsn-UX-gvl"/>
-                            <constraint firstItem="xWA-OJ-hS3" firstAttribute="top" secondItem="crO-jm-lvY" secondAttribute="top" constant="333" id="mCJ-u9-XFr"/>
+                            <constraint firstItem="R4r-1Z-y5r" firstAttribute="trailing" secondItem="3mE-Rb-Z1p" secondAttribute="trailing" id="2T4-EZ-1q5"/>
+                            <constraint firstItem="cc6-4T-FN1" firstAttribute="trailing" secondItem="fSe-L2-PmV" secondAttribute="trailingMargin" id="2o1-gR-sdK"/>
+                            <constraint firstItem="laa-jj-XkH" firstAttribute="top" secondItem="pyv-kd-rtZ" secondAttribute="bottom" constant="38" id="2tj-rv-WK6"/>
+                            <constraint firstItem="8eQ-RD-Wui" firstAttribute="leading" secondItem="fSe-L2-PmV" secondAttribute="leadingMargin" id="4sY-I4-172"/>
+                            <constraint firstItem="laa-jj-XkH" firstAttribute="trailing" secondItem="R4r-1Z-y5r" secondAttribute="trailing" id="7Pb-qx-m0F"/>
+                            <constraint firstItem="cc6-4T-FN1" firstAttribute="top" secondItem="laa-jj-XkH" secondAttribute="bottom" constant="49" id="7yd-yE-fsQ"/>
+                            <constraint firstItem="pyv-kd-rtZ" firstAttribute="top" secondItem="crO-jm-lvY" secondAttribute="top" id="9bz-9L-rx0"/>
+                            <constraint firstItem="59E-zX-vQv" firstAttribute="top" secondItem="crO-jm-lvY" secondAttribute="top" constant="36" id="AFr-Dc-qt7"/>
+                            <constraint firstItem="cc6-4T-FN1" firstAttribute="trailing" secondItem="8eQ-RD-Wui" secondAttribute="trailing" id="BKz-cV-Sb2"/>
+                            <constraint firstItem="pyv-kd-rtZ" firstAttribute="leading" secondItem="59E-zX-vQv" secondAttribute="leading" id="DeO-nf-Foi"/>
+                            <constraint firstItem="59E-zX-vQv" firstAttribute="leading" secondItem="R4r-1Z-y5r" secondAttribute="leading" id="IC8-kI-etG"/>
+                            <constraint firstItem="laa-jj-XkH" firstAttribute="leading" secondItem="R4r-1Z-y5r" secondAttribute="leading" id="JLe-QB-moo"/>
+                            <constraint firstItem="R4r-1Z-y5r" firstAttribute="leading" secondItem="3mE-Rb-Z1p" secondAttribute="leading" id="RRk-lw-i1h"/>
+                            <constraint firstItem="3mE-Rb-Z1p" firstAttribute="leading" secondItem="cc6-4T-FN1" secondAttribute="leading" id="SMD-9W-bd9"/>
+                            <constraint firstItem="crO-jm-lvY" firstAttribute="trailing" secondItem="09N-m0-kEh" secondAttribute="trailing" constant="24" id="bA4-Xp-Wfc"/>
+                            <constraint firstItem="cc6-4T-FN1" firstAttribute="leading" secondItem="09N-m0-kEh" secondAttribute="leading" id="ci4-66-JqG"/>
+                            <constraint firstItem="3mE-Rb-Z1p" firstAttribute="centerX" secondItem="8eQ-RD-Wui" secondAttribute="centerX" id="eDD-tc-l2R"/>
+                            <constraint firstItem="8eQ-RD-Wui" firstAttribute="top" secondItem="09N-m0-kEh" secondAttribute="bottom" id="h35-3E-DR5"/>
+                            <constraint firstItem="pyv-kd-rtZ" firstAttribute="trailing" secondItem="59E-zX-vQv" secondAttribute="trailing" id="iqB-rE-bDw"/>
+                            <constraint firstItem="cc6-4T-FN1" firstAttribute="top" secondItem="R4r-1Z-y5r" secondAttribute="bottom" constant="57" id="lmN-Nl-GZj"/>
+                            <constraint firstItem="8eQ-RD-Wui" firstAttribute="bottom" secondItem="crO-jm-lvY" secondAttribute="bottom" id="ofx-Ip-Ff4"/>
+                            <constraint firstItem="59E-zX-vQv" firstAttribute="trailing" secondItem="R4r-1Z-y5r" secondAttribute="trailing" id="w2d-h4-5xW"/>
+                            <constraint firstItem="8eQ-RD-Wui" firstAttribute="top" secondItem="cc6-4T-FN1" secondAttribute="bottom" constant="44" id="wo4-qS-Qb2"/>
+                            <constraint firstItem="09N-m0-kEh" firstAttribute="top" secondItem="3mE-Rb-Z1p" secondAttribute="bottom" constant="52" id="ycy-nJ-av8"/>
+                            <constraint firstItem="pyv-kd-rtZ" firstAttribute="leading" secondItem="crO-jm-lvY" secondAttribute="leading" constant="8" id="yhE-6j-2a1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="crO-jm-lvY"/>
                     </view>
@@ -729,29 +925,127 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OMKitImage" translatesAutoresizingMaskIntoConstraints="NO" id="Ypm-WE-4Xj">
-                                <rect key="frame" x="16" y="397" width="288" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Economic Production Quantity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZC-nx-hYj">
+                                <rect key="frame" x="8" y="64" width="304" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="tck-ah-sBX"/>
+                                    <constraint firstAttribute="height" constant="45" id="PsC-hQ-nOm"/>
                                 </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="OMKit is developed by Jonathan Kizer www.jonathankizer.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rrS-U1-lDz">
-                                <rect key="frame" x="16" y="450" width="288" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Note: Remember to keep the time unit constant throughout all input parameters. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BRv-vf-Vxy">
+                                <rect key="frame" x="8" y="100" width="304" height="52"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="1X6-Ga-LfQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q7y-3O-j78">
+                                <rect key="frame" x="8" y="147" width="304" height="179"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">The Economic Order Quantity balances holding costs and order costs in order to minimize the total cost. This implementation assumes a constant price, though price discounts at certain quantities can still be tested by (a.) solving for the optimal quantity at the discounted price, and (b.) finding the total cost of the price break point quantity.</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mah-CM-O28">
+                                <rect key="frame" x="8" y="291" width="304" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5pv-Vd-yIz">
+                                <rect key="frame" x="8" y="314" width="304" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="dr2-Yw-05j"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="This app makes use of SigmaSwiftStatistics: www.github.com/evgenyneu/SigmaSwiftStatistics">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3m-Bd-YWO">
+                                <rect key="frame" x="8" y="434" width="288" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="gUj-wU-dyK"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="OMKit is developed by Jonathan Kizer www.jonathankizer.com">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OMKitImage" translatesAutoresizingMaskIntoConstraints="NO" id="KgD-qd-tqP">
+                                <rect key="frame" x="16" y="486" width="288" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="lRP-8y-Dd2"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHX-Io-4MA">
+                                <rect key="frame" x="8" y="375" width="296" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="ePD-r3-2Fl"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Icons thanks to the Noun Project and artists Ari Setyo Wibowo, Vectors Market, Vladimir Belochkin, &amp; Eucalpy">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ypm-WE-4Xj" firstAttribute="trailing" secondItem="Qg6-yx-KNt" secondAttribute="trailingMargin" id="3Kl-wo-HKO"/>
-                            <constraint firstItem="Ypm-WE-4Xj" firstAttribute="trailing" secondItem="rrS-U1-lDz" secondAttribute="trailing" id="JLi-Lo-1sn"/>
-                            <constraint firstItem="Ypm-WE-4Xj" firstAttribute="top" secondItem="sql-7C-6Qp" secondAttribute="top" constant="333" id="Kc7-IC-1Qw"/>
-                            <constraint firstItem="Ypm-WE-4Xj" firstAttribute="leading" secondItem="rrS-U1-lDz" secondAttribute="leading" id="Set-cA-gRw"/>
-                            <constraint firstItem="rrS-U1-lDz" firstAttribute="bottom" secondItem="sql-7C-6Qp" secondAttribute="bottom" id="cMp-Co-syQ"/>
-                            <constraint firstItem="Ypm-WE-4Xj" firstAttribute="leading" secondItem="Qg6-yx-KNt" secondAttribute="leadingMargin" id="w3d-Pe-OPT"/>
-                            <constraint firstItem="rrS-U1-lDz" firstAttribute="top" secondItem="Ypm-WE-4Xj" secondAttribute="bottom" constant="8" symbolic="YES" id="yye-Cp-xme"/>
+                            <constraint firstItem="r3m-Bd-YWO" firstAttribute="top" secondItem="5pv-Vd-yIz" secondAttribute="bottom" constant="52" id="45E-2T-k3i"/>
+                            <constraint firstItem="5pv-Vd-yIz" firstAttribute="centerX" secondItem="KgD-qd-tqP" secondAttribute="centerX" id="AiV-k5-hxg"/>
+                            <constraint firstItem="1ZC-nx-hYj" firstAttribute="top" secondItem="sql-7C-6Qp" secondAttribute="top" id="E01-aS-ff6"/>
+                            <constraint firstItem="vHX-Io-4MA" firstAttribute="top" secondItem="q7y-3O-j78" secondAttribute="bottom" constant="49" id="N2D-Hk-e80"/>
+                            <constraint firstItem="q7y-3O-j78" firstAttribute="trailing" secondItem="mah-CM-O28" secondAttribute="trailing" id="NQH-ZH-bv4"/>
+                            <constraint firstItem="vHX-Io-4MA" firstAttribute="trailing" secondItem="KgD-qd-tqP" secondAttribute="trailing" id="O20-sF-wBp"/>
+                            <constraint firstItem="vHX-Io-4MA" firstAttribute="top" secondItem="mah-CM-O28" secondAttribute="bottom" constant="57" id="O7d-Kn-UhE"/>
+                            <constraint firstItem="vHX-Io-4MA" firstAttribute="trailing" secondItem="Qg6-yx-KNt" secondAttribute="trailingMargin" id="RBc-3H-nQA"/>
+                            <constraint firstItem="BRv-vf-Vxy" firstAttribute="trailing" secondItem="mah-CM-O28" secondAttribute="trailing" id="YSq-pp-vCx"/>
+                            <constraint firstItem="1ZC-nx-hYj" firstAttribute="trailing" secondItem="BRv-vf-Vxy" secondAttribute="trailing" id="YWJ-sm-gtg"/>
+                            <constraint firstItem="q7y-3O-j78" firstAttribute="top" secondItem="1ZC-nx-hYj" secondAttribute="bottom" constant="38" id="Zqn-zB-9i2"/>
+                            <constraint firstItem="BRv-vf-Vxy" firstAttribute="leading" secondItem="mah-CM-O28" secondAttribute="leading" id="eeo-eS-Ohc"/>
+                            <constraint firstItem="mah-CM-O28" firstAttribute="trailing" secondItem="5pv-Vd-yIz" secondAttribute="trailing" id="f0M-Bb-IaC"/>
+                            <constraint firstItem="mah-CM-O28" firstAttribute="leading" secondItem="5pv-Vd-yIz" secondAttribute="leading" id="hzk-i3-EST"/>
+                            <constraint firstItem="vHX-Io-4MA" firstAttribute="leading" secondItem="r3m-Bd-YWO" secondAttribute="leading" id="iJy-E8-Yuj"/>
+                            <constraint firstItem="KgD-qd-tqP" firstAttribute="leading" secondItem="Qg6-yx-KNt" secondAttribute="leadingMargin" id="iuu-kB-5pA"/>
+                            <constraint firstItem="BRv-vf-Vxy" firstAttribute="top" secondItem="sql-7C-6Qp" secondAttribute="top" constant="36" id="js0-IP-HUa"/>
+                            <constraint firstItem="1ZC-nx-hYj" firstAttribute="leading" secondItem="BRv-vf-Vxy" secondAttribute="leading" id="kpY-P2-N0t"/>
+                            <constraint firstItem="KgD-qd-tqP" firstAttribute="bottom" secondItem="sql-7C-6Qp" secondAttribute="bottom" id="lv2-a0-KRV"/>
+                            <constraint firstItem="q7y-3O-j78" firstAttribute="leading" secondItem="mah-CM-O28" secondAttribute="leading" id="pcP-p7-hAx"/>
+                            <constraint firstItem="5pv-Vd-yIz" firstAttribute="leading" secondItem="vHX-Io-4MA" secondAttribute="leading" id="sEW-HV-IBD"/>
+                            <constraint firstItem="KgD-qd-tqP" firstAttribute="top" secondItem="vHX-Io-4MA" secondAttribute="bottom" constant="44" id="ua5-Be-Qav"/>
+                            <constraint firstItem="1ZC-nx-hYj" firstAttribute="leading" secondItem="sql-7C-6Qp" secondAttribute="leading" constant="8" id="v9L-6b-OPr"/>
+                            <constraint firstItem="KgD-qd-tqP" firstAttribute="top" secondItem="r3m-Bd-YWO" secondAttribute="bottom" id="woQ-uc-5PD"/>
+                            <constraint firstItem="sql-7C-6Qp" firstAttribute="trailing" secondItem="r3m-Bd-YWO" secondAttribute="trailing" constant="24" id="yGk-PG-vbg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sql-7C-6Qp"/>
                     </view>
@@ -771,7 +1065,11 @@
                         <viewLayoutGuide key="safeArea" id="Ys4-9O-tpN"/>
                     </view>
                     <navigationItem key="navigationItem" id="yad-gf-Rn4">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="InfoIcon" id="zxT-R7-ZFC"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="InfoIcon" id="zxT-R7-ZFC">
+                            <connections>
+                                <segue destination="AtU-eZ-5SM" kind="show" id="xTU-MA-Owd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTx-Tb-C6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -786,83 +1084,127 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OMKitImage" translatesAutoresizingMaskIntoConstraints="NO" id="q0e-ni-eH2">
-                                <rect key="frame" x="16" y="397" width="288" height="45"/>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4Q-YZ-sTs">
-                                <rect key="frame" x="0.0" y="64" width="320" height="325"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVT-Qr-iR2" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Economic Order Quantity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSl-xd-ZLD">
-                                                <rect key="frame" x="8" y="8" width="304" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="Bau-rr-Dcl"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhw-Mq-W28">
-                                                <rect key="frame" x="8" y="46" width="304" height="179"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="179" id="Jrh-me-XXe"/>
-                                                </constraints>
-                                                <attributedString key="attributedText">
-                                                    <fragment>
-                                                        <string key="content">The Economic Order Quantity balances holding costs and order costs in order to minimize the total cost. This implementation assumes a constant price, though price discounts at certain quantities can still be tested by (a.) solving for the optimal quantity at the discounted price, and (b.) finding the total cost of the price break point quantity.</string>
-                                                        <attributes>
-                                                            <font key="NSFont" metaFont="system" size="14"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="lhw-Mq-W28" firstAttribute="top" secondItem="rVT-Qr-iR2" secondAttribute="top" constant="46" id="8Gl-N6-YxM"/>
-                                            <constraint firstItem="iSl-xd-ZLD" firstAttribute="leading" secondItem="rVT-Qr-iR2" secondAttribute="leadingMargin" id="EmK-Ay-GNh"/>
-                                            <constraint firstAttribute="trailing" secondItem="iSl-xd-ZLD" secondAttribute="trailing" constant="8" id="XbV-1a-0Yr"/>
-                                            <constraint firstItem="iSl-xd-ZLD" firstAttribute="top" secondItem="rVT-Qr-iR2" secondAttribute="topMargin" id="Y86-qe-MRd"/>
-                                            <constraint firstItem="lhw-Mq-W28" firstAttribute="trailing" secondItem="rVT-Qr-iR2" secondAttribute="trailingMargin" id="Yaf-LF-0wA"/>
-                                            <constraint firstItem="lhw-Mq-W28" firstAttribute="leading" secondItem="iSl-xd-ZLD" secondAttribute="leading" id="uyQ-E9-qUd"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Economic Order Quantity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSl-xd-ZLD">
+                                <rect key="frame" x="8" y="64" width="304" height="45"/>
                                 <constraints>
-                                    <constraint firstItem="rVT-Qr-iR2" firstAttribute="leading" secondItem="h4Q-YZ-sTs" secondAttribute="leading" id="F8n-xh-4kT"/>
-                                    <constraint firstAttribute="bottom" secondItem="rVT-Qr-iR2" secondAttribute="bottom" id="hN9-bs-OSM"/>
-                                    <constraint firstItem="rVT-Qr-iR2" firstAttribute="top" secondItem="h4Q-YZ-sTs" secondAttribute="top" id="jUK-gv-FO2"/>
-                                    <constraint firstAttribute="trailing" secondItem="rVT-Qr-iR2" secondAttribute="trailing" id="pOj-Lo-KPK"/>
+                                    <constraint firstAttribute="height" constant="45" id="9oJ-cb-vaZ"/>
                                 </constraints>
-                            </scrollView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="OMKit is developed by Jonathan Kizer www.jonathankizer.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cGU-Y0-TVU">
-                                <rect key="frame" x="16" y="450" width="288" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Note: Remember to keep the time unit constant throughout all input parameters. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tjp-b7-EqP">
+                                <rect key="frame" x="8" y="100" width="304" height="52"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Ywv-RO-tMP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhw-Mq-W28">
+                                <rect key="frame" x="8" y="147" width="304" height="179"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">The Economic Order Quantity balances holding costs and order costs in order to minimize the total cost. This implementation assumes a constant price, though price discounts at certain quantities can still be tested by (a.) solving for the optimal quantity at the discounted price, and (b.) finding the total cost of the price break point quantity.</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJ7-1d-h1J">
+                                <rect key="frame" x="8" y="291" width="304" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cGU-Y0-TVU">
+                                <rect key="frame" x="8" y="434" width="288" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="BAZ-LK-Rvo"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="OMKit is developed by Jonathan Kizer www.jonathankizer.com">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OMKitImage" translatesAutoresizingMaskIntoConstraints="NO" id="WPo-Z4-ZwB">
+                                <rect key="frame" x="16" y="486" width="288" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="KIQ-Hu-8Ne"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uxh-XM-hpA">
+                                <rect key="frame" x="8" y="375" width="296" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="BQv-MP-8sP"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Icons thanks to the Noun Project and artists Ari Setyo Wibowo, Vectors Market, Vladimir Belochkin, &amp; Eucalpy">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iyO-Ti-Y9l">
+                                <rect key="frame" x="8" y="314" width="304" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="l1b-Zh-x38"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="This app makes use of SigmaSwiftStatistics: www.github.com/evgenyneu/SigmaSwiftStatistics">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="h4Q-YZ-sTs" firstAttribute="leading" secondItem="0oH-kJ-5PT" secondAttribute="leading" id="0GW-fE-HXL"/>
-                            <constraint firstItem="q0e-ni-eH2" firstAttribute="top" secondItem="h4Q-YZ-sTs" secondAttribute="bottom" constant="8" id="0zV-m3-cpA"/>
-                            <constraint firstItem="h4Q-YZ-sTs" firstAttribute="top" secondItem="0oH-kJ-5PT" secondAttribute="top" id="8TW-Ll-VIF"/>
-                            <constraint firstItem="q0e-ni-eH2" firstAttribute="leading" secondItem="iwo-V9-WXx" secondAttribute="leadingMargin" id="8nV-Nz-xfr"/>
-                            <constraint firstItem="rVT-Qr-iR2" firstAttribute="width" secondItem="iwo-V9-WXx" secondAttribute="width" id="AkZ-2Y-vpT"/>
-                            <constraint firstItem="0oH-kJ-5PT" firstAttribute="bottom" secondItem="q0e-ni-eH2" secondAttribute="bottom" constant="77" id="IAB-PS-eG2"/>
-                            <constraint firstItem="rVT-Qr-iR2" firstAttribute="height" secondItem="iwo-V9-WXx" secondAttribute="height" id="JG6-Hf-77e"/>
-                            <constraint firstItem="h4Q-YZ-sTs" firstAttribute="trailing" secondItem="0oH-kJ-5PT" secondAttribute="trailing" id="NTy-od-DHe"/>
-                            <constraint firstItem="cGU-Y0-TVU" firstAttribute="leading" secondItem="q0e-ni-eH2" secondAttribute="leading" id="TaR-Wy-ljz"/>
-                            <constraint firstItem="cGU-Y0-TVU" firstAttribute="top" secondItem="q0e-ni-eH2" secondAttribute="bottom" constant="8" symbolic="YES" id="TcF-8f-Mdc"/>
-                            <constraint firstItem="q0e-ni-eH2" firstAttribute="trailing" secondItem="iwo-V9-WXx" secondAttribute="trailingMargin" id="VDp-bE-FAE"/>
-                            <constraint firstItem="cGU-Y0-TVU" firstAttribute="trailing" secondItem="q0e-ni-eH2" secondAttribute="trailing" id="X3l-va-Qi2"/>
-                            <constraint firstItem="cGU-Y0-TVU" firstAttribute="bottom" secondItem="0oH-kJ-5PT" secondAttribute="bottom" id="cny-L8-fIH"/>
-                            <constraint firstItem="q0e-ni-eH2" firstAttribute="top" secondItem="0oH-kJ-5PT" secondAttribute="top" constant="333" id="fh1-7K-cYZ"/>
+                            <constraint firstItem="iSl-xd-ZLD" firstAttribute="leading" secondItem="0oH-kJ-5PT" secondAttribute="leading" constant="8" id="4WW-9S-Gij"/>
+                            <constraint firstItem="Tjp-b7-EqP" firstAttribute="top" secondItem="0oH-kJ-5PT" secondAttribute="top" constant="36" id="B2u-2W-tQZ"/>
+                            <constraint firstItem="WPo-Z4-ZwB" firstAttribute="top" secondItem="Uxh-XM-hpA" secondAttribute="bottom" constant="44" id="Bjs-li-eYU"/>
+                            <constraint firstItem="Uxh-XM-hpA" firstAttribute="top" secondItem="BJ7-1d-h1J" secondAttribute="bottom" constant="57" id="Gyq-6c-Woe"/>
+                            <constraint firstItem="iyO-Ti-Y9l" firstAttribute="leading" secondItem="Uxh-XM-hpA" secondAttribute="leading" id="Ih4-I1-X8R"/>
+                            <constraint firstItem="0oH-kJ-5PT" firstAttribute="trailing" secondItem="cGU-Y0-TVU" secondAttribute="trailing" constant="24" id="NUa-Fy-ALm"/>
+                            <constraint firstItem="Tjp-b7-EqP" firstAttribute="trailing" secondItem="lhw-Mq-W28" secondAttribute="trailing" id="OQC-BU-Ufq"/>
+                            <constraint firstItem="Uxh-XM-hpA" firstAttribute="trailing" secondItem="WPo-Z4-ZwB" secondAttribute="trailing" id="PvB-Fm-osa"/>
+                            <constraint firstItem="Uxh-XM-hpA" firstAttribute="leading" secondItem="cGU-Y0-TVU" secondAttribute="leading" id="RE3-XS-iCY"/>
+                            <constraint firstItem="iyO-Ti-Y9l" firstAttribute="centerX" secondItem="WPo-Z4-ZwB" secondAttribute="centerX" id="X9x-uv-HAJ"/>
+                            <constraint firstItem="BJ7-1d-h1J" firstAttribute="leading" secondItem="iyO-Ti-Y9l" secondAttribute="leading" id="ZqO-KA-cgA"/>
+                            <constraint firstItem="WPo-Z4-ZwB" firstAttribute="leading" secondItem="iwo-V9-WXx" secondAttribute="leadingMargin" id="bNX-pu-jEv"/>
+                            <constraint firstItem="cGU-Y0-TVU" firstAttribute="top" secondItem="iyO-Ti-Y9l" secondAttribute="bottom" constant="52" id="bVB-Cs-Kq9"/>
+                            <constraint firstItem="iSl-xd-ZLD" firstAttribute="trailing" secondItem="Tjp-b7-EqP" secondAttribute="trailing" id="d4t-7U-X4a"/>
+                            <constraint firstItem="WPo-Z4-ZwB" firstAttribute="bottom" secondItem="0oH-kJ-5PT" secondAttribute="bottom" id="jA6-wK-YCq"/>
+                            <constraint firstItem="Uxh-XM-hpA" firstAttribute="top" secondItem="lhw-Mq-W28" secondAttribute="bottom" constant="49" id="jt4-qs-3yj"/>
+                            <constraint firstItem="Tjp-b7-EqP" firstAttribute="leading" secondItem="lhw-Mq-W28" secondAttribute="leading" id="ltC-ca-82y"/>
+                            <constraint firstItem="0oH-kJ-5PT" firstAttribute="bottom" secondItem="cGU-Y0-TVU" secondAttribute="bottom" constant="33" id="pmd-ie-2HF"/>
+                            <constraint firstItem="lhw-Mq-W28" firstAttribute="top" secondItem="iSl-xd-ZLD" secondAttribute="bottom" constant="38" id="rX7-qx-LA5"/>
+                            <constraint firstItem="BJ7-1d-h1J" firstAttribute="trailing" secondItem="iyO-Ti-Y9l" secondAttribute="trailing" id="ssR-SV-SyG"/>
+                            <constraint firstItem="iSl-xd-ZLD" firstAttribute="leading" secondItem="Tjp-b7-EqP" secondAttribute="leading" id="u1r-HG-EwV"/>
+                            <constraint firstItem="BJ7-1d-h1J" firstAttribute="trailing" secondItem="lhw-Mq-W28" secondAttribute="trailing" id="wnx-NM-aN5"/>
+                            <constraint firstItem="iSl-xd-ZLD" firstAttribute="top" secondItem="0oH-kJ-5PT" secondAttribute="top" id="ypt-q4-PyB"/>
+                            <constraint firstItem="BJ7-1d-h1J" firstAttribute="leading" secondItem="lhw-Mq-W28" secondAttribute="leading" id="yxn-G3-WEY"/>
+                            <constraint firstItem="Uxh-XM-hpA" firstAttribute="trailing" secondItem="iwo-V9-WXx" secondAttribute="trailingMargin" id="z4o-CR-Ahx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0oH-kJ-5PT"/>
                     </view>
@@ -1198,6 +1540,143 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JN2-Bl-bdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-9" y="1757"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XWx-eB-IbF">
+            <objects>
+                <viewController id="AtU-eZ-5SM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Lu-Hz-E5r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newsvendor Model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLQ-El-ziH">
+                                <rect key="frame" x="8" y="64" width="304" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="hVd-5k-pb0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Note: Remember to keep the time unit constant throughout all input parameters. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Pm-b8-SCd">
+                                <rect key="frame" x="8" y="100" width="304" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="JL3-HQ-UcQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ql4-xM-vYB">
+                                <rect key="frame" x="8" y="147" width="304" height="179"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">The Economic Order Quantity balances holding costs and order costs in order to minimize the total cost. This implementation assumes a constant price, though price discounts at certain quantities can still be tested by (a.) solving for the optimal quantity at the discounted price, and (b.) finding the total cost of the price break point quantity.</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgg-kc-Lac">
+                                <rect key="frame" x="8" y="291" width="304" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nl8-WN-F1K">
+                                <rect key="frame" x="8" y="314" width="304" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Pcg-8s-uwn"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="This app makes use of SigmaSwiftStatistics: www.github.com/evgenyneu/SigmaSwiftStatistics">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qQe-7w-2sw">
+                                <rect key="frame" x="8" y="434" width="288" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="W4n-6v-01K"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="OMKit is developed by Jonathan Kizer www.jonathankizer.com">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OMKitImage" translatesAutoresizingMaskIntoConstraints="NO" id="IQ3-Xa-4km">
+                                <rect key="frame" x="16" y="486" width="288" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="SoF-8B-gIz"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tYC-LT-e5h">
+                                <rect key="frame" x="8" y="375" width="296" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="qRI-ja-H27"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Icons thanks to the Noun Project and artists Ari Setyo Wibowo, Vectors Market, Vladimir Belochkin, &amp; Eucalpy">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tYC-LT-e5h" firstAttribute="top" secondItem="Fgg-kc-Lac" secondAttribute="bottom" constant="57" id="2Hf-g0-mVh"/>
+                            <constraint firstItem="IQ3-Xa-4km" firstAttribute="top" secondItem="qQe-7w-2sw" secondAttribute="bottom" id="2nZ-WR-uMv"/>
+                            <constraint firstItem="IQ3-Xa-4km" firstAttribute="leading" secondItem="2Lu-Hz-E5r" secondAttribute="leadingMargin" id="308-Hy-kl3"/>
+                            <constraint firstItem="ql4-xM-vYB" firstAttribute="top" secondItem="SLQ-El-ziH" secondAttribute="bottom" constant="38" id="3hp-x6-hFs"/>
+                            <constraint firstItem="0Pm-b8-SCd" firstAttribute="trailing" secondItem="Fgg-kc-Lac" secondAttribute="trailing" id="8Rn-AB-40k"/>
+                            <constraint firstItem="SLQ-El-ziH" firstAttribute="leading" secondItem="Gpe-xB-7VT" secondAttribute="leading" constant="8" id="8pe-sF-zRS"/>
+                            <constraint firstItem="IQ3-Xa-4km" firstAttribute="bottom" secondItem="Gpe-xB-7VT" secondAttribute="bottom" id="Afi-G1-I3u"/>
+                            <constraint firstItem="qQe-7w-2sw" firstAttribute="top" secondItem="Nl8-WN-F1K" secondAttribute="bottom" constant="52" id="Jiy-6a-Ilq"/>
+                            <constraint firstItem="tYC-LT-e5h" firstAttribute="trailing" secondItem="IQ3-Xa-4km" secondAttribute="trailing" id="KtL-Dg-v77"/>
+                            <constraint firstItem="SLQ-El-ziH" firstAttribute="trailing" secondItem="0Pm-b8-SCd" secondAttribute="trailing" id="KtQ-Zw-AGV"/>
+                            <constraint firstItem="Gpe-xB-7VT" firstAttribute="trailing" secondItem="qQe-7w-2sw" secondAttribute="trailing" constant="24" id="OOm-rS-wug"/>
+                            <constraint firstItem="ql4-xM-vYB" firstAttribute="leading" secondItem="Fgg-kc-Lac" secondAttribute="leading" id="Oee-YU-G6n"/>
+                            <constraint firstItem="0Pm-b8-SCd" firstAttribute="leading" secondItem="Fgg-kc-Lac" secondAttribute="leading" id="T3F-LQ-LrT"/>
+                            <constraint firstItem="Fgg-kc-Lac" firstAttribute="leading" secondItem="Nl8-WN-F1K" secondAttribute="leading" id="WQa-ND-W0H"/>
+                            <constraint firstItem="Fgg-kc-Lac" firstAttribute="trailing" secondItem="Nl8-WN-F1K" secondAttribute="trailing" id="Wux-26-HCi"/>
+                            <constraint firstItem="tYC-LT-e5h" firstAttribute="trailing" secondItem="2Lu-Hz-E5r" secondAttribute="trailingMargin" id="bjY-we-Ywo"/>
+                            <constraint firstItem="tYC-LT-e5h" firstAttribute="leading" secondItem="qQe-7w-2sw" secondAttribute="leading" id="c7N-vI-tqf"/>
+                            <constraint firstItem="tYC-LT-e5h" firstAttribute="top" secondItem="ql4-xM-vYB" secondAttribute="bottom" constant="49" id="fYM-Er-H3M"/>
+                            <constraint firstItem="Nl8-WN-F1K" firstAttribute="leading" secondItem="tYC-LT-e5h" secondAttribute="leading" id="gTZ-mA-bnh"/>
+                            <constraint firstItem="IQ3-Xa-4km" firstAttribute="top" secondItem="tYC-LT-e5h" secondAttribute="bottom" constant="44" id="jWe-Pt-di0"/>
+                            <constraint firstItem="0Pm-b8-SCd" firstAttribute="top" secondItem="Gpe-xB-7VT" secondAttribute="top" constant="36" id="oWr-rp-Ggv"/>
+                            <constraint firstItem="Nl8-WN-F1K" firstAttribute="centerX" secondItem="IQ3-Xa-4km" secondAttribute="centerX" id="q4m-Jf-H9w"/>
+                            <constraint firstItem="SLQ-El-ziH" firstAttribute="leading" secondItem="0Pm-b8-SCd" secondAttribute="leading" id="rC2-xO-Jho"/>
+                            <constraint firstItem="SLQ-El-ziH" firstAttribute="top" secondItem="Gpe-xB-7VT" secondAttribute="top" id="u7v-IY-2Lq"/>
+                            <constraint firstItem="ql4-xM-vYB" firstAttribute="trailing" secondItem="Fgg-kc-Lac" secondAttribute="trailing" id="xku-Vb-mO5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gpe-xB-7VT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5A-eh-mhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752" y="1757"/>
         </scene>
     </scenes>
     <resources>
