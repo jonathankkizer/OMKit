@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import iosMath
+//import iosMath
 import SigmaSwiftStatistics
 
 class StockCalculatorViewController: UIViewController {
@@ -43,7 +43,7 @@ class StockCalculatorViewController: UIViewController {
         safetyStockTotalCostLabel.isHidden = true
         
         // CGRect based on whether or not toggle is enabled
-        var safetyStockFormulaRect = setSafetyFormulaRectToggleEnabled()
+        //var safetyStockFormulaRect = setSafetyFormulaRectToggleEnabled()
 
         // Do any additional setup after loading the view.
     }
@@ -116,25 +116,31 @@ class StockCalculatorViewController: UIViewController {
         if servicePercentileDouble > 1 {
             servicePercentileDouble = servicePercentileDouble/100
         }
-        var demandMuDouble: Double = Double(demandMu.text!)!
-        var demandSigmaDouble: Double = Double(demandSigma.text!)!
-        var leadTimeMuDouble: Double = Double(leadTimeMu.text!)!
-        var leadTimeSigmaDouble: Double = setLeadTimeSigmaDouble()
-        var unitCostDouble: Double = Double(unitCost.text!)!
+        let demandMuDouble: Double = Double(demandMu.text!)!
+        let demandSigmaDouble: Double = Double(demandSigma.text!)!
+        let leadTimeMuDouble: Double = Double(leadTimeMu.text!)!
+        let leadTimeSigmaDouble: Double = setLeadTimeSigmaDouble()
+        let unitCostDouble: Double = Double(unitCost.text!)!
         
         
         // calculate ZScore
-        var zScore: Double = percentileToZScore(percentile: servicePercentileDouble)
+        let zScore: Double = percentileToZScore(percentile: servicePercentileDouble)
         
         // solution calculation
         if leadTimeSigma.isHidden == true {
             // calculate safety stock with constant lead time
             var safetyStock: Double = safetyStockKnownLeadtime(zScore: zScore, leadTime: leadTimeMuDouble, demandSigma: demandSigmaDouble)
+            if safetyStock < 0 {
+                safetyStock = Double(0)
+            }
             safetyStockSolution.text? = formatMathSolution(value: safetyStock)
             safetyStockTotalCostLabel.text? = formatCurrencyUSD(value: (safetyStock * unitCostDouble))
         } else if leadTimeSigma.isHidden == false {
             // calculate safety stock with variable lead time
             var safetyStock: Double = safetyStockUnknownLeadtime(zScore: zScore, leadTimeMu: leadTimeMuDouble, leadTimeSigma: leadTimeSigmaDouble, demandMu: demandMuDouble, demandSigma: demandSigmaDouble)
+            if safetyStock < 0 {
+                safetyStock = Double(0)
+            }
             safetyStockSolution.text? = formatMathSolution(value: safetyStock)
             safetyStockTotalCostLabel.text? = formatCurrencyUSD(value: (safetyStock * unitCostDouble))
         }
@@ -146,7 +152,7 @@ class StockCalculatorViewController: UIViewController {
         if leadTimeSigma.isHidden == true {
             return Double(1)
         } else {
-            var leadTimeSigmaDouble: Double = Double(leadTimeSigma.text!)!
+            let leadTimeSigmaDouble: Double = Double(leadTimeSigma.text!)!
             return leadTimeSigmaDouble
         }
     }
@@ -163,7 +169,7 @@ class StockCalculatorViewController: UIViewController {
     }
     
     func percentileToZScore(percentile: Double) -> Double {
-        var zScore: Double = Sigma.normalQuantile(p: percentile, μ: 0, σ: 1)!
+        let zScore: Double = Sigma.normalQuantile(p: percentile, μ: 0, σ: 1)!
         print("Z Score: ", zScore)
         return zScore
     }

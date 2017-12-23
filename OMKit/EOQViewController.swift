@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import iosMath
+//import iosMath
 
 class EOQViewController: UIViewController {
     
