@@ -1,0 +1,6 @@
+framework module Pods_OMKit {
+  umbrella header "Pods-OMKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1088 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00409C74D5D00A0E602EF23B6DF5CCCA /* StandardDeviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442963770FD1C2F9D250BDCA4B767590 /* StandardDeviation.swift */; };
+		0569129A73F4CCBFAC5EACCF2ACD9378 /* MTMathListDisplayInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 956301D3056D8E72E4E0104A870057D5 /* MTMathListDisplayInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0A2C8E9B279C99DF721711DEFEFE7C7F /* MTUnicode.h in Headers */ = {isa = PBXBuildFile; fileRef = 8778BFBF5BB38F201D4D515E23B16957 /* MTUnicode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1228AD9F0B154CCB78AD3799321ABA38 /* MTMathListDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = F711B06366944C5F14BA7415FCF41591 /* MTMathListDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12B64D1492C171CCD24BF8F3192936EC /* MTLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5EA76A8F9E4379B19C937E01E6F601 /* MTLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13D9CA9195B99258A31998AC19E00F0D /* NSBezierPath+addLineToPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F4D1E943B4A527560503CDDF3BB6CD /* NSBezierPath+addLineToPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		145E01C795E68F405814ADD940D1451E /* Variance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508DD01FB099C335219F2300DEDE042 /* Variance.swift */; };
+		15422D71098AD0862AE4119D739C075E /* MTMathAtomFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4DA2493ABE2793716B5768A462ABA6 /* MTMathAtomFactory.m */; };
+		1E58057D86D62940950F189FA7FC5A96 /* MTMathListIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A62C0875FD4A5BE23C4D6E4C139A57A /* MTMathListIndex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21041AA356A1455F3A25A8AAC5554F96 /* Pods-OMKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 995786B093124E7A663579AEC5CE9FD7 /* Pods-OMKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2270E26CA635D8A7510A363D21A95B32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E2B04BC1935A86EB34129AA71C7D83 /* UIKit.framework */; };
+		23B3BF994E3D6D80EB8F3445347A41D4 /* iosMath-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7641C0C3537A2BC3FC4011341DD12A20 /* iosMath-dummy.m */; };
+		28ED3A0B865E123C4771247A91948365 /* texgyretermes-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F15E55FDD50B3167485A4ACC18F3B7 /* texgyretermes-math.plist */; };
+		291DAF3612ECDA472EDFE4AE52B35D01 /* NSColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F590C47E02C1391D3407FAD1C32BDA7 /* NSColor+HexString.m */; };
+		2B0FFB0293BB37BFB9D5980BB2E4EFAD /* iosMath-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCE145A30B27995C815EC522FF83D93 /* iosMath-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E82EC8E7E191BB01B06896A5878EAEE /* MTUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 574C85251A34B27871F95478F5A54611 /* MTUnicode.m */; };
+		345ED928F89929FF0C0BDE7F03E28C73 /* MTFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D0CF5A3E0ECAB77A35E809E5AAC4F7 /* MTFontManager.m */; };
+		360DF25B3613FC65E4AE08EBDD701A78 /* NSView+backgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E807A502D0D78F38A645CE8DB52829 /* NSView+backgroundColor.m */; };
+		40004858D2D5D91753A668F7807EDA0E /* UIColor+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E403931FB43DAFAF157E2092721B61 /* UIColor+HexString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4609226F4D9D35B1C6608CEDD1D66565 /* StandardErrorOfTheMean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA5830D51CDA5CC71CDA6D16518D550 /* StandardErrorOfTheMean.swift */; };
+		491187A13405EA143B0AEBC4C152F390 /* SigmaSwiftStatistics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A5728D820E8801CDC7C90D42A8A297 /* SigmaSwiftStatistics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D4CF11845BCDA16AB2CF50A6FCF599A /* UniqueValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F92BF7CEE05FD48C5ED01399AAAE97 /* UniqueValues.swift */; };
+		4FED369F179E9D7F1148277C3E19327D /* MTFontManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 131A362029527104B2A5AF99727AD45F /* MTFontManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B3ED01F24B792500663399937DBC33E /* Covariance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8785C5DE60D48860DB8BB96DC5D131C3 /* Covariance.swift */; };
+		5CCEFF8002AA2BC6644F85341EE0691D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59D694A9020F0959A3D1601E40BACC9 /* CoreText.framework */; };
+		5D74114FF0995C785F41BC997970809B /* NSView+backgroundColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B58E49440AB3E29D03270C825EA83BB9 /* NSView+backgroundColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A146E6154B5BF5328292D11EB362DEA /* Pods-OMKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C942FBD45031BC3DEA035528B6719D /* Pods-OMKit-dummy.m */; };
+		6A79041147288ABE92B6E5E58B7BC0B0 /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD808ACEFAF72FF54264686176B4BAB /* Rank.swift */; };
+		6C2B852333E2312754FDB1DCC6B011EF /* mathFonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A670E64F5BC2E29D460B5DC245E7EEDB /* mathFonts.bundle */; };
+		6C8A47148EBD541AC12C11E60C51EF12 /* texgyretermes-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = C10E1B5AB62B2EED3CCCD7E6F9F3601F /* texgyretermes-math.otf */; };
+		7712EC2BCCF93BDC4DA2A6E1F69ECECE /* MTConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 3683DF002C3EB61A1DE9D901778AA41B /* MTConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7845BB24860657524751831854B9F2D9 /* Skewness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7028AC31DDF200E8552017E4F0F7B1 /* Skewness.swift */; };
+		7C4732379298E1D5EB259E97B75A55B4 /* MTMathListDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F405A411D83FD72A8780BC58052017D /* MTMathListDisplay.m */; };
+		7D8FB13BA8F80129ABE99E4F4404A3DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+		8237D2C7CA0BAA6702DFEFC18156C6FE /* MTMathListIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C0B92390B08CE9F637D5329EA24A1 /* MTMathListIndex.m */; };
+		8A59895B998232336892E32BD096DC78 /* MTMathListBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CB0C79117677B4B59838A2E6EFCB1E6 /* MTMathListBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B3D8E565618EEE0C9D89D01647A48F3 /* MTMathUILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = CF7C8BB3A6086273A3816B56483AF3CF /* MTMathUILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		910FE2FD376FCDBC9FE4844CF15CA8FF /* CentralMoment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC78F552D591436DD955308B2EBF7473 /* CentralMoment.swift */; };
+		91BB115206E501BF66351EE8C1130509 /* MTFont+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6CC036B11F767FBA75BB79D0D61270 /* MTFont+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9832BE8BC2653B41124DC5360482D1E9 /* MTMathListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B0D1BADE686EA1D0DC9821FE8F883B /* MTMathListBuilder.m */; };
+		9B4C90885CF053F41318A1670C86CD6F /* MTMathUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A8D36E1C2DC85350F4228497A1BDA8 /* MTMathUILabel.m */; };
+		9D4F71C5ED696ECF7EE08CC4FC7E320F /* MTTypesetter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CFE4B3347AA7A4C2764CA17A78A210 /* MTTypesetter.m */; };
+		9DD061E4FBCFAB0763285352AEE1A68B /* CoefficientVariation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A228C021D0DBDF0A4B573BD0EF21EE /* CoefficientVariation.swift */; };
+		9FEBBD97E5221D1FFD9F76EF8DA0B20D /* MTFontMathTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A35014F0383293DED8009E2F172C4E3 /* MTFontMathTable.m */; };
+		A0A1CB8EB6BD22723050211F52B2D7CE /* Quantiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E30A3F1A3DC80275A03F267E42707C3 /* Quantiles.swift */; };
+		A4C692F36AED171BC4EAF8E58D402613 /* Percentile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F70D2FCB4A6407785AE2579BBA304 /* Percentile.swift */; };
+		A962531423E2DDB49B6C6F9EC8FB0B23 /* MTMathAtomFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 486E2F6C1CD74FB7EAADD99E0164BC60 /* MTMathAtomFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACC5899F1551DC62DD8FB18476925657 /* Frequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBDE10960728AE4B85FBE3694D246B /* Frequencies.swift */; };
+		B3C2AC70552A3CC2025F634FA68166F3 /* MTMathList.h in Headers */ = {isa = PBXBuildFile; fileRef = 555F1157C2C6611A5945B251C046DCEF /* MTMathList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B84181E34A1DE69138863445C3487A7E /* latinmodern-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = E525FDBDDED449A2F2374B371C9D4D60 /* latinmodern-math.plist */; };
+		B85ADAA137335CEDDA3C7C074E69A14A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+		BF9AA245DD1FDF5F7403B063BA73F6DE /* MTFontMathTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C2142DA3E9E11FC77784C4E264ECDC /* MTFontMathTable.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C0A3B092E1F2A5BBE005A99C8E2D34F8 /* xits-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2BA733FE26EEF6D1A2C5DF456D3C454C /* xits-math.otf */; };
+		CAD3FE38E609A6D7D15D1A4E45FE1E23 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75724AFC8DB229902C200CFD229B7576 /* QuartzCore.framework */; };
+		CE90381180386B8A7B6E1FFBFD983653 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4EE262349108144307D042F49DE193 /* CoreGraphics.framework */; };
+		D3463266729B00E518587A0C226254D1 /* Median.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49624D4B485D7EFD9ECF7BB6BBD5A26 /* Median.swift */; };
+		D638FDBD8E1B42730BF21A96957E6333 /* MTFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 461BEE1DAA7780658F42DA188B3D894F /* MTFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7BD219908E82FB0172EC968207DA53F /* MTTypesetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 994D5E216C724E9895BC1DE315E44B1D /* MTTypesetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D7D27E45B3C991BF009F9DA45040E32D /* NSColor+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA10D93A422D5A50BF8AF0ADA8770BE /* NSColor+HexString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD4D6A4C3338391140A64A9FBDE16011 /* Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B10DA88BE9ABE07EA967AC2D0AB3C12 /* Normal.swift */; };
+		DDF7FE8E1BD267A3C40BCF279E383676 /* NSBezierPath+addLineToPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B22046CC85DC366F10F7CCE5E98B3CED /* NSBezierPath+addLineToPoint.m */; };
+		DF8328E83B499955E1E720CF5CABD073 /* IosMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 41AF9BC95352045A5D10AC20A162F654 /* IosMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E03E6526671FBEC932CDB823CF120C05 /* latinmodern-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B650B9F5FAE5A9D711B35B60DE4C64E /* latinmodern-math.otf */; };
+		E1FA80428078AC02A148F090B2E6C24D /* Sigma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D628F3D724B6E463AE73FECB2B7AAA /* Sigma.swift */; };
+		E21CC1FB16198DCFE897BCD096DADB4B /* Kurtosis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C69AEDBBAC4D9762E009D103A3CFE9 /* Kurtosis.swift */; };
+		EF134C47FA11A70DB831CEF726F99C6B /* MTMathList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEE7B5DE701A0C873EDA5E4CA3B21F /* MTMathList.m */; };
+		F14E44C0C2E9BEAABD2B469C9E5D3676 /* SigmaSwiftStatistics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D970A413A57603582F4B52221F7F856 /* SigmaSwiftStatistics-dummy.m */; };
+		F3C49220F0A9F340CF968F2383991F88 /* MTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8087576F3D48405C1AE6BB351ED8DC9C /* MTLabel.m */; };
+		F3E07CDB17F36B181258FEB75A790849 /* xits-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF1FE3DCFE525724A7398441EF83006 /* xits-math.plist */; };
+		F601B1CB9A03DE091F96AD38DF522D85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+		F66294E94F125ADE253B7D65C67D0754 /* MTFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B09C12DA31E6FDBB45108F8C28D8ED /* MTFont.m */; };
+		F819E5660DAEE98D5CE145D0C947ADC2 /* Pearson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D5C7C3ED180060877B8A46D8CDAE4 /* Pearson.swift */; };
+		FEE2C6E9682BFC48EF9F3DC176F4A29D /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F869C0C79825E1514BA8085793946F /* UIColor+HexString.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50ED98D8191105F7D1BE62A936D5C4BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 640503A70BAA0C77A7161E86D4351864;
+			remoteInfo = SigmaSwiftStatistics;
+		};
+		DDF7C1A1C905720CE4A49027041AB104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B9836C06662F6AF26CF13501848D275;
+			remoteInfo = "iosMath-mathFonts";
+		};
+		F6D722563D459B570D2AFE0E375D5D80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B2F702A8B0B2E4FE2AF5DD816057E7;
+			remoteInfo = iosMath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DBBDE10960728AE4B85FBE3694D246B /* Frequencies.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Frequencies.swift; path = SigmaSwiftStatistics/Frequencies.swift; sourceTree = "<group>"; };
+		131A362029527104B2A5AF99727AD45F /* MTFontManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTFontManager.h; path = iosMath/render/MTFontManager.h; sourceTree = "<group>"; };
+		13CA025988D3A5814E8A96107502B51A /* SigmaSwiftStatistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SigmaSwiftStatistics.framework; path = SigmaSwiftStatistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADE199765D202D83FD6FE097E2C93D7 /* SigmaSwiftStatistics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SigmaSwiftStatistics.xcconfig; sourceTree = "<group>"; };
+		1CBC5B475D65B2104D782462290289CD /* Pods-OMKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OMKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		1CCEE7B5DE701A0C873EDA5E4CA3B21F /* MTMathList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTMathList.m; path = iosMath/lib/MTMathList.m; sourceTree = "<group>"; };
+		1E2E21E9BAA17659759D79D155BCF8A8 /* iosMath.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iosMath.xcconfig; sourceTree = "<group>"; };
+		1E6CC036B11F767FBA75BB79D0D61270 /* MTFont+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MTFont+Internal.h"; path = "iosMath/render/internal/MTFont+Internal.h"; sourceTree = "<group>"; };
+		1F405A411D83FD72A8780BC58052017D /* MTMathListDisplay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTMathListDisplay.m; path = iosMath/render/MTMathListDisplay.m; sourceTree = "<group>"; };
+		20F4D1E943B4A527560503CDDF3BB6CD /* NSBezierPath+addLineToPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+addLineToPoint.h"; path = "iosMath/render/NSBezierPath+addLineToPoint.h"; sourceTree = "<group>"; };
+		22F15E55FDD50B3167485A4ACC18F3B7 /* texgyretermes-math.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "texgyretermes-math.plist"; path = "fonts/texgyretermes-math.plist"; sourceTree = "<group>"; };
+		25E807A502D0D78F38A645CE8DB52829 /* NSView+backgroundColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSView+backgroundColor.m"; path = "iosMath/render/NSView+backgroundColor.m"; sourceTree = "<group>"; };
+		29C5DDA89A68F8CEF2C42CE7BC43387C /* SigmaSwiftStatistics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SigmaSwiftStatistics-prefix.pch"; sourceTree = "<group>"; };
+		2BA733FE26EEF6D1A2C5DF456D3C454C /* xits-math.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "xits-math.otf"; path = "fonts/xits-math.otf"; sourceTree = "<group>"; };
+		2EBB4FC813DDC1C7F9DAA2DEA26F58A8 /* Pods-OMKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OMKit.debug.xcconfig"; sourceTree = "<group>"; };
+		32C69AEDBBAC4D9762E009D103A3CFE9 /* Kurtosis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kurtosis.swift; path = SigmaSwiftStatistics/Kurtosis.swift; sourceTree = "<group>"; };
+		32E2B04BC1935A86EB34129AA71C7D83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		34C2142DA3E9E11FC77784C4E264ECDC /* MTFontMathTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTFontMathTable.h; path = iosMath/render/internal/MTFontMathTable.h; sourceTree = "<group>"; };
+		357C0B92390B08CE9F637D5329EA24A1 /* MTMathListIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTMathListIndex.m; path = iosMath/lib/MTMathListIndex.m; sourceTree = "<group>"; };
+		35E403931FB43DAFAF157E2092721B61 /* UIColor+HexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "iosMath/render/UIColor+HexString.h"; sourceTree = "<group>"; };
+		3683DF002C3EB61A1DE9D901778AA41B /* MTConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTConfig.h; path = iosMath/render/MTConfig.h; sourceTree = "<group>"; };
+		3A35014F0383293DED8009E2F172C4E3 /* MTFontMathTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTFontMathTable.m; path = iosMath/render/internal/MTFontMathTable.m; sourceTree = "<group>"; };
+		3A62C0875FD4A5BE23C4D6E4C139A57A /* MTMathListIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTMathListIndex.h; path = iosMath/lib/MTMathListIndex.h; sourceTree = "<group>"; };
+		3B650B9F5FAE5A9D711B35B60DE4C64E /* latinmodern-math.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "latinmodern-math.otf"; path = "fonts/latinmodern-math.otf"; sourceTree = "<group>"; };
+		3C08015DFAEBA44300B153A5EA394C1E /* Pods_OMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OMKit.framework; path = "Pods-OMKit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7028AC31DDF200E8552017E4F0F7B1 /* Skewness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Skewness.swift; path = SigmaSwiftStatistics/Skewness.swift; sourceTree = "<group>"; };
+		3DA10D93A422D5A50BF8AF0ADA8770BE /* NSColor+HexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSColor+HexString.h"; path = "iosMath/render/NSColor+HexString.h"; sourceTree = "<group>"; };
+		3EEE0E6BA9A8433227CF1E5CDD753117 /* Pods-OMKit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OMKit-frameworks.sh"; sourceTree = "<group>"; };
+		41AF9BC95352045A5D10AC20A162F654 /* IosMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IosMath.h; path = iosMath/IosMath.h; sourceTree = "<group>"; };
+		4291B3F0B9362A6591EE5017B1400661 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442963770FD1C2F9D250BDCA4B767590 /* StandardDeviation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StandardDeviation.swift; path = SigmaSwiftStatistics/StandardDeviation.swift; sourceTree = "<group>"; };
+		44B09C12DA31E6FDBB45108F8C28D8ED /* MTFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTFont.m; path = iosMath/render/MTFont.m; sourceTree = "<group>"; };
+		461BEE1DAA7780658F42DA188B3D894F /* MTFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTFont.h; path = iosMath/render/MTFont.h; sourceTree = "<group>"; };
+		47F92BF7CEE05FD48C5ED01399AAAE97 /* UniqueValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UniqueValues.swift; path = SigmaSwiftStatistics/UniqueValues.swift; sourceTree = "<group>"; };
+		486E2F6C1CD74FB7EAADD99E0164BC60 /* MTMathAtomFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTMathAtomFactory.h; path = iosMath/lib/MTMathAtomFactory.h; sourceTree = "<group>"; };
+		52F869C0C79825E1514BA8085793946F /* UIColor+HexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "iosMath/render/UIColor+HexString.m"; sourceTree = "<group>"; };
+		555F1157C2C6611A5945B251C046DCEF /* MTMathList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTMathList.h; path = iosMath/lib/MTMathList.h; sourceTree = "<group>"; };
+		56D628F3D724B6E463AE73FECB2B7AAA /* Sigma.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sigma.swift; path = SigmaSwiftStatistics/Sigma.swift; sourceTree = "<group>"; };
+		574C85251A34B27871F95478F5A54611 /* MTUnicode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTUnicode.m; path = iosMath/lib/MTUnicode.m; sourceTree = "<group>"; };
+		60ADD329CA86ACB1600074D70298D07F /* Pods-OMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OMKit.release.xcconfig"; sourceTree = "<group>"; };
+		60D0CF5A3E0ECAB77A35E809E5AAC4F7 /* MTFontManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTFontManager.m; path = iosMath/render/MTFontManager.m; sourceTree = "<group>"; };
+		64E803A394DEE9B08A95E04A92A8FE85 /* iosMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iosMath.framework; path = iosMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C942FBD45031BC3DEA035528B6719D /* Pods-OMKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OMKit-dummy.m"; sourceTree = "<group>"; };
+		6BD2F457807BB3C8D75BBD41D62131E7 /* iosMath-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iosMath-prefix.pch"; sourceTree = "<group>"; };
+		6E30A3F1A3DC80275A03F267E42707C3 /* Quantiles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Quantiles.swift; path = SigmaSwiftStatistics/Quantiles.swift; sourceTree = "<group>"; };
+		6FA5830D51CDA5CC71CDA6D16518D550 /* StandardErrorOfTheMean.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StandardErrorOfTheMean.swift; path = SigmaSwiftStatistics/StandardErrorOfTheMean.swift; sourceTree = "<group>"; };
+		73A8D36E1C2DC85350F4228497A1BDA8 /* MTMathUILabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTMathUILabel.m; path = iosMath/render/MTMathUILabel.m; sourceTree = "<group>"; };
+		75724AFC8DB229902C200CFD229B7576 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		7641C0C3537A2BC3FC4011341DD12A20 /* iosMath-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iosMath-dummy.m"; sourceTree = "<group>"; };
+		7C4FBFDB6118A19FA826D581B0BBFB13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E4EE262349108144307D042F49DE193 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		8087576F3D48405C1AE6BB351ED8DC9C /* MTLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLabel.m; path = iosMath/render/MTLabel.m; sourceTree = "<group>"; };
+		86A5728D820E8801CDC7C90D42A8A297 /* SigmaSwiftStatistics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SigmaSwiftStatistics-umbrella.h"; sourceTree = "<group>"; };
+		8778BFBF5BB38F201D4D515E23B16957 /* MTUnicode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTUnicode.h; path = iosMath/lib/MTUnicode.h; sourceTree = "<group>"; };
+		8785C5DE60D48860DB8BB96DC5D131C3 /* Covariance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Covariance.swift; path = SigmaSwiftStatistics/Covariance.swift; sourceTree = "<group>"; };
+		8883B34BA7D3D2596C7DCC518B4BE416 /* SigmaSwiftStatistics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SigmaSwiftStatistics.modulemap; sourceTree = "<group>"; };
+		8AE7B22B9991F944A72E6942A0AC3AC5 /* Pods-OMKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OMKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8B10DA88BE9ABE07EA967AC2D0AB3C12 /* Normal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Normal.swift; path = SigmaSwiftStatistics/Normal.swift; sourceTree = "<group>"; };
+		8CB0C79117677B4B59838A2E6EFCB1E6 /* MTMathListBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTMathListBuilder.h; path = iosMath/lib/MTMathListBuilder.h; sourceTree = "<group>"; };
+		8E5EA76A8F9E4379B19C937E01E6F601 /* MTLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLabel.h; path = iosMath/render/MTLabel.h; sourceTree = "<group>"; };
+		8F590C47E02C1391D3407FAD1C32BDA7 /* NSColor+HexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSColor+HexString.m"; path = "iosMath/render/NSColor+HexString.m"; sourceTree = "<group>"; };
+		8FCE145A30B27995C815EC522FF83D93 /* iosMath-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iosMath-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		956301D3056D8E72E4E0104A870057D5 /* MTMathListDisplayInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTMathListDisplayInternal.h; path = iosMath/render/internal/MTMathListDisplayInternal.h; sourceTree = "<group>"; };
+		994D5E216C724E9895BC1DE315E44B1D /* MTTypesetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTTypesetter.h; path = iosMath/render/internal/MTTypesetter.h; sourceTree = "<group>"; };
+		995786B093124E7A663579AEC5CE9FD7 /* Pods-OMKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OMKit-umbrella.h"; sourceTree = "<group>"; };
+		9D970A413A57603582F4B52221F7F856 /* SigmaSwiftStatistics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SigmaSwiftStatistics-dummy.m"; sourceTree = "<group>"; };
+		A670E64F5BC2E29D460B5DC245E7EEDB /* mathFonts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = mathFonts.bundle; path = mathFonts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B0D1BADE686EA1D0DC9821FE8F883B /* MTMathListBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTMathListBuilder.m; path = iosMath/lib/MTMathListBuilder.m; sourceTree = "<group>"; };
+		AC9C5805FEFA91991B96EEC9F2FB1966 /* iosMath.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = iosMath.modulemap; sourceTree = "<group>"; };
+		ACD808ACEFAF72FF54264686176B4BAB /* Rank.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rank.swift; path = SigmaSwiftStatistics/Rank.swift; sourceTree = "<group>"; };
+		B0D4788BE6646FB603A92B8526A67450 /* Pods-OMKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OMKit-resources.sh"; sourceTree = "<group>"; };
+		B22046CC85DC366F10F7CCE5E98B3CED /* NSBezierPath+addLineToPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+addLineToPoint.m"; path = "iosMath/render/NSBezierPath+addLineToPoint.m"; sourceTree = "<group>"; };
+		B58E49440AB3E29D03270C825EA83BB9 /* NSView+backgroundColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSView+backgroundColor.h"; path = "iosMath/render/NSView+backgroundColor.h"; sourceTree = "<group>"; };
+		BCF1FE3DCFE525724A7398441EF83006 /* xits-math.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "xits-math.plist"; path = "fonts/xits-math.plist"; sourceTree = "<group>"; };
+		C10E1B5AB62B2EED3CCCD7E6F9F3601F /* texgyretermes-math.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "texgyretermes-math.otf"; path = "fonts/texgyretermes-math.otf"; sourceTree = "<group>"; };
+		C3CD360A2DAE41A4D3828B1F7A3EA476 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49624D4B485D7EFD9ECF7BB6BBD5A26 /* Median.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Median.swift; path = SigmaSwiftStatistics/Median.swift; sourceTree = "<group>"; };
+		CF7C8BB3A6086273A3816B56483AF3CF /* MTMathUILabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTMathUILabel.h; path = iosMath/render/MTMathUILabel.h; sourceTree = "<group>"; };
+		D508DD01FB099C335219F2300DEDE042 /* Variance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Variance.swift; path = SigmaSwiftStatistics/Variance.swift; sourceTree = "<group>"; };
+		D64D5C7C3ED180060877B8A46D8CDAE4 /* Pearson.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pearson.swift; path = SigmaSwiftStatistics/Pearson.swift; sourceTree = "<group>"; };
+		DC0C4C598EF29C70132D3415BD36879A /* ResourceBundle-mathFonts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-mathFonts-Info.plist"; sourceTree = "<group>"; };
+		E525FDBDDED449A2F2374B371C9D4D60 /* latinmodern-math.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "latinmodern-math.plist"; path = "fonts/latinmodern-math.plist"; sourceTree = "<group>"; };
+		EC78F552D591436DD955308B2EBF7473 /* CentralMoment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CentralMoment.swift; path = SigmaSwiftStatistics/CentralMoment.swift; sourceTree = "<group>"; };
+		F3A228C021D0DBDF0A4B573BD0EF21EE /* CoefficientVariation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoefficientVariation.swift; path = SigmaSwiftStatistics/CoefficientVariation.swift; sourceTree = "<group>"; };
+		F59D694A9020F0959A3D1601E40BACC9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		F5CFE4B3347AA7A4C2764CA17A78A210 /* MTTypesetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTTypesetter.m; path = iosMath/render/internal/MTTypesetter.m; sourceTree = "<group>"; };
+		F711B06366944C5F14BA7415FCF41591 /* MTMathListDisplay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTMathListDisplay.h; path = iosMath/render/MTMathListDisplay.h; sourceTree = "<group>"; };
+		FBED326370A18E6978D162F2582B1D11 /* Pods-OMKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OMKit.modulemap"; sourceTree = "<group>"; };
+		FC4DA2493ABE2793716B5768A462ABA6 /* MTMathAtomFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTMathAtomFactory.m; path = iosMath/lib/MTMathAtomFactory.m; sourceTree = "<group>"; };
+		FF4F70D2FCB4A6407785AE2579BBA304 /* Percentile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Percentile.swift; path = SigmaSwiftStatistics/Percentile.swift; sourceTree = "<group>"; };
+		FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002DC6976FFE451553166FE72ED68E9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE90381180386B8A7B6E1FFBFD983653 /* CoreGraphics.framework in Frameworks */,
+				5CCEFF8002AA2BC6644F85341EE0691D /* CoreText.framework in Frameworks */,
+				B85ADAA137335CEDDA3C7C074E69A14A /* Foundation.framework in Frameworks */,
+				CAD3FE38E609A6D7D15D1A4E45FE1E23 /* QuartzCore.framework in Frameworks */,
+				2270E26CA635D8A7510A363D21A95B32 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F194C56E44F6A9EE08F8E324E69F03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3039E9727F3D4863613A7E36108B482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8FB13BA8F80129ABE99E4F4404A3DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F621B2C4BCA755CC26F8EF3F922D8060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F601B1CB9A03DE091F96AD38DF522D85 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E8C749D0550CD9E548C636A24739B87 /* Pods-OMKit */ = {
+			isa = PBXGroup;
+			children = (
+				C3CD360A2DAE41A4D3828B1F7A3EA476 /* Info.plist */,
+				FBED326370A18E6978D162F2582B1D11 /* Pods-OMKit.modulemap */,
+				8AE7B22B9991F944A72E6942A0AC3AC5 /* Pods-OMKit-acknowledgements.markdown */,
+				1CBC5B475D65B2104D782462290289CD /* Pods-OMKit-acknowledgements.plist */,
+				66C942FBD45031BC3DEA035528B6719D /* Pods-OMKit-dummy.m */,
+				3EEE0E6BA9A8433227CF1E5CDD753117 /* Pods-OMKit-frameworks.sh */,
+				B0D4788BE6646FB603A92B8526A67450 /* Pods-OMKit-resources.sh */,
+				995786B093124E7A663579AEC5CE9FD7 /* Pods-OMKit-umbrella.h */,
+				2EBB4FC813DDC1C7F9DAA2DEA26F58A8 /* Pods-OMKit.debug.xcconfig */,
+				60ADD329CA86ACB1600074D70298D07F /* Pods-OMKit.release.xcconfig */,
+			);
+			name = "Pods-OMKit";
+			path = "Target Support Files/Pods-OMKit";
+			sourceTree = "<group>";
+		};
+		1AB53AD36BF57422114995E0DA5BD717 /* iosMath */ = {
+			isa = PBXGroup;
+			children = (
+				41AF9BC95352045A5D10AC20A162F654 /* IosMath.h */,
+				3683DF002C3EB61A1DE9D901778AA41B /* MTConfig.h */,
+				461BEE1DAA7780658F42DA188B3D894F /* MTFont.h */,
+				44B09C12DA31E6FDBB45108F8C28D8ED /* MTFont.m */,
+				1E6CC036B11F767FBA75BB79D0D61270 /* MTFont+Internal.h */,
+				131A362029527104B2A5AF99727AD45F /* MTFontManager.h */,
+				60D0CF5A3E0ECAB77A35E809E5AAC4F7 /* MTFontManager.m */,
+				34C2142DA3E9E11FC77784C4E264ECDC /* MTFontMathTable.h */,
+				3A35014F0383293DED8009E2F172C4E3 /* MTFontMathTable.m */,
+				8E5EA76A8F9E4379B19C937E01E6F601 /* MTLabel.h */,
+				8087576F3D48405C1AE6BB351ED8DC9C /* MTLabel.m */,
+				486E2F6C1CD74FB7EAADD99E0164BC60 /* MTMathAtomFactory.h */,
+				FC4DA2493ABE2793716B5768A462ABA6 /* MTMathAtomFactory.m */,
+				555F1157C2C6611A5945B251C046DCEF /* MTMathList.h */,
+				1CCEE7B5DE701A0C873EDA5E4CA3B21F /* MTMathList.m */,
+				8CB0C79117677B4B59838A2E6EFCB1E6 /* MTMathListBuilder.h */,
+				A6B0D1BADE686EA1D0DC9821FE8F883B /* MTMathListBuilder.m */,
+				F711B06366944C5F14BA7415FCF41591 /* MTMathListDisplay.h */,
+				1F405A411D83FD72A8780BC58052017D /* MTMathListDisplay.m */,
+				956301D3056D8E72E4E0104A870057D5 /* MTMathListDisplayInternal.h */,
+				3A62C0875FD4A5BE23C4D6E4C139A57A /* MTMathListIndex.h */,
+				357C0B92390B08CE9F637D5329EA24A1 /* MTMathListIndex.m */,
+				CF7C8BB3A6086273A3816B56483AF3CF /* MTMathUILabel.h */,
+				73A8D36E1C2DC85350F4228497A1BDA8 /* MTMathUILabel.m */,
+				994D5E216C724E9895BC1DE315E44B1D /* MTTypesetter.h */,
+				F5CFE4B3347AA7A4C2764CA17A78A210 /* MTTypesetter.m */,
+				8778BFBF5BB38F201D4D515E23B16957 /* MTUnicode.h */,
+				574C85251A34B27871F95478F5A54611 /* MTUnicode.m */,
+				20F4D1E943B4A527560503CDDF3BB6CD /* NSBezierPath+addLineToPoint.h */,
+				B22046CC85DC366F10F7CCE5E98B3CED /* NSBezierPath+addLineToPoint.m */,
+				3DA10D93A422D5A50BF8AF0ADA8770BE /* NSColor+HexString.h */,
+				8F590C47E02C1391D3407FAD1C32BDA7 /* NSColor+HexString.m */,
+				B58E49440AB3E29D03270C825EA83BB9 /* NSView+backgroundColor.h */,
+				25E807A502D0D78F38A645CE8DB52829 /* NSView+backgroundColor.m */,
+				35E403931FB43DAFAF157E2092721B61 /* UIColor+HexString.h */,
+				52F869C0C79825E1514BA8085793946F /* UIColor+HexString.m */,
+				A1A3CEE5F19576381DAC2062572EAE31 /* Resources */,
+				6972F75DC0B94779FDC5B6652BC1A14B /* Support Files */,
+			);
+			name = iosMath;
+			path = iosMath;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD3B6667F06509663DDD01426DEE151E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6972F75DC0B94779FDC5B6652BC1A14B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4291B3F0B9362A6591EE5017B1400661 /* Info.plist */,
+				AC9C5805FEFA91991B96EEC9F2FB1966 /* iosMath.modulemap */,
+				1E2E21E9BAA17659759D79D155BCF8A8 /* iosMath.xcconfig */,
+				7641C0C3537A2BC3FC4011341DD12A20 /* iosMath-dummy.m */,
+				6BD2F457807BB3C8D75BBD41D62131E7 /* iosMath-prefix.pch */,
+				8FCE145A30B27995C815EC522FF83D93 /* iosMath-umbrella.h */,
+				DC0C4C598EF29C70132D3415BD36879A /* ResourceBundle-mathFonts-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iosMath";
+			sourceTree = "<group>";
+		};
+		76A5F0E0871409758D9ACEADEA7FB294 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AB53AD36BF57422114995E0DA5BD717 /* iosMath */,
+				ADAE8F2604D394168AE0EAD124A4CF34 /* SigmaSwiftStatistics */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				76A5F0E0871409758D9ACEADEA7FB294 /* Pods */,
+				8CD5289E7FC1CB843A62959415429BFD /* Products */,
+				9E34F5393F7FAC72DD3F3C122A43539D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8CD5289E7FC1CB843A62959415429BFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64E803A394DEE9B08A95E04A92A8FE85 /* iosMath.framework */,
+				A670E64F5BC2E29D460B5DC245E7EEDB /* mathFonts.bundle */,
+				3C08015DFAEBA44300B153A5EA394C1E /* Pods_OMKit.framework */,
+				13CA025988D3A5814E8A96107502B51A /* SigmaSwiftStatistics.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		958C97B53E9A39CC3057FEE194C252D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C4FBFDB6118A19FA826D581B0BBFB13 /* Info.plist */,
+				8883B34BA7D3D2596C7DCC518B4BE416 /* SigmaSwiftStatistics.modulemap */,
+				1ADE199765D202D83FD6FE097E2C93D7 /* SigmaSwiftStatistics.xcconfig */,
+				9D970A413A57603582F4B52221F7F856 /* SigmaSwiftStatistics-dummy.m */,
+				29C5DDA89A68F8CEF2C42CE7BC43387C /* SigmaSwiftStatistics-prefix.pch */,
+				86A5728D820E8801CDC7C90D42A8A297 /* SigmaSwiftStatistics-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SigmaSwiftStatistics";
+			sourceTree = "<group>";
+		};
+		9E34F5393F7FAC72DD3F3C122A43539D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E8C749D0550CD9E548C636A24739B87 /* Pods-OMKit */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A1A3CEE5F19576381DAC2062572EAE31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B650B9F5FAE5A9D711B35B60DE4C64E /* latinmodern-math.otf */,
+				E525FDBDDED449A2F2374B371C9D4D60 /* latinmodern-math.plist */,
+				C10E1B5AB62B2EED3CCCD7E6F9F3601F /* texgyretermes-math.otf */,
+				22F15E55FDD50B3167485A4ACC18F3B7 /* texgyretermes-math.plist */,
+				2BA733FE26EEF6D1A2C5DF456D3C454C /* xits-math.otf */,
+				BCF1FE3DCFE525724A7398441EF83006 /* xits-math.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ADAE8F2604D394168AE0EAD124A4CF34 /* SigmaSwiftStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				EC78F552D591436DD955308B2EBF7473 /* CentralMoment.swift */,
+				F3A228C021D0DBDF0A4B573BD0EF21EE /* CoefficientVariation.swift */,
+				8785C5DE60D48860DB8BB96DC5D131C3 /* Covariance.swift */,
+				0DBBDE10960728AE4B85FBE3694D246B /* Frequencies.swift */,
+				32C69AEDBBAC4D9762E009D103A3CFE9 /* Kurtosis.swift */,
+				C49624D4B485D7EFD9ECF7BB6BBD5A26 /* Median.swift */,
+				8B10DA88BE9ABE07EA967AC2D0AB3C12 /* Normal.swift */,
+				D64D5C7C3ED180060877B8A46D8CDAE4 /* Pearson.swift */,
+				FF4F70D2FCB4A6407785AE2579BBA304 /* Percentile.swift */,
+				6E30A3F1A3DC80275A03F267E42707C3 /* Quantiles.swift */,
+				ACD808ACEFAF72FF54264686176B4BAB /* Rank.swift */,
+				56D628F3D724B6E463AE73FECB2B7AAA /* Sigma.swift */,
+				3C7028AC31DDF200E8552017E4F0F7B1 /* Skewness.swift */,
+				442963770FD1C2F9D250BDCA4B767590 /* StandardDeviation.swift */,
+				6FA5830D51CDA5CC71CDA6D16518D550 /* StandardErrorOfTheMean.swift */,
+				47F92BF7CEE05FD48C5ED01399AAAE97 /* UniqueValues.swift */,
+				D508DD01FB099C335219F2300DEDE042 /* Variance.swift */,
+				958C97B53E9A39CC3057FEE194C252D5 /* Support Files */,
+			);
+			name = SigmaSwiftStatistics;
+			path = SigmaSwiftStatistics;
+			sourceTree = "<group>";
+		};
+		FD3B6667F06509663DDD01426DEE151E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7E4EE262349108144307D042F49DE193 /* CoreGraphics.framework */,
+				F59D694A9020F0959A3D1601E40BACC9 /* CoreText.framework */,
+				FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */,
+				75724AFC8DB229902C200CFD229B7576 /* QuartzCore.framework */,
+				32E2B04BC1935A86EB34129AA71C7D83 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E54F14F344414BF4FD26A2132EF31F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491187A13405EA143B0AEBC4C152F390 /* SigmaSwiftStatistics-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A88019F8D610E5175778CD2389F980C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0FFB0293BB37BFB9D5980BB2E4EFAD /* iosMath-umbrella.h in Headers */,
+				DF8328E83B499955E1E720CF5CABD073 /* IosMath.h in Headers */,
+				7712EC2BCCF93BDC4DA2A6E1F69ECECE /* MTConfig.h in Headers */,
+				91BB115206E501BF66351EE8C1130509 /* MTFont+Internal.h in Headers */,
+				D638FDBD8E1B42730BF21A96957E6333 /* MTFont.h in Headers */,
+				4FED369F179E9D7F1148277C3E19327D /* MTFontManager.h in Headers */,
+				BF9AA245DD1FDF5F7403B063BA73F6DE /* MTFontMathTable.h in Headers */,
+				12B64D1492C171CCD24BF8F3192936EC /* MTLabel.h in Headers */,
+				A962531423E2DDB49B6C6F9EC8FB0B23 /* MTMathAtomFactory.h in Headers */,
+				B3C2AC70552A3CC2025F634FA68166F3 /* MTMathList.h in Headers */,
+				8A59895B998232336892E32BD096DC78 /* MTMathListBuilder.h in Headers */,
+				1228AD9F0B154CCB78AD3799321ABA38 /* MTMathListDisplay.h in Headers */,
+				0569129A73F4CCBFAC5EACCF2ACD9378 /* MTMathListDisplayInternal.h in Headers */,
+				1E58057D86D62940950F189FA7FC5A96 /* MTMathListIndex.h in Headers */,
+				8B3D8E565618EEE0C9D89D01647A48F3 /* MTMathUILabel.h in Headers */,
+				D7BD219908E82FB0172EC968207DA53F /* MTTypesetter.h in Headers */,
+				0A2C8E9B279C99DF721711DEFEFE7C7F /* MTUnicode.h in Headers */,
+				13D9CA9195B99258A31998AC19E00F0D /* NSBezierPath+addLineToPoint.h in Headers */,
+				D7D27E45B3C991BF009F9DA45040E32D /* NSColor+HexString.h in Headers */,
+				5D74114FF0995C785F41BC997970809B /* NSView+backgroundColor.h in Headers */,
+				40004858D2D5D91753A668F7807EDA0E /* UIColor+HexString.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F050A9F4C767F7AF55DA1ADAC1BCB91B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21041AA356A1455F3A25A8AAC5554F96 /* Pods-OMKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2E905D070DF8B7CD9B3152113C26C059 /* Pods-OMKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE086A07DE388891674FA32ED9BC1D7 /* Build configuration list for PBXNativeTarget "Pods-OMKit" */;
+			buildPhases = (
+				238863B3D3EAA5DBABEEDC105584A1E7 /* Sources */,
+				C3039E9727F3D4863613A7E36108B482 /* Frameworks */,
+				F050A9F4C767F7AF55DA1ADAC1BCB91B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52CD3B6B4214D6C8AB9483C956681F22 /* PBXTargetDependency */,
+				4D62BB3AA6C49026004EF59EAF0FABF1 /* PBXTargetDependency */,
+			);
+			name = "Pods-OMKit";
+			productName = "Pods-OMKit";
+			productReference = 3C08015DFAEBA44300B153A5EA394C1E /* Pods_OMKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		640503A70BAA0C77A7161E86D4351864 /* SigmaSwiftStatistics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A4A36B66AECF81CBD61ED56496B7FCE /* Build configuration list for PBXNativeTarget "SigmaSwiftStatistics" */;
+			buildPhases = (
+				BF6760027D92FDB676E5554FED3422AB /* Sources */,
+				F621B2C4BCA755CC26F8EF3F922D8060 /* Frameworks */,
+				3E54F14F344414BF4FD26A2132EF31F7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SigmaSwiftStatistics;
+			productName = SigmaSwiftStatistics;
+			productReference = 13CA025988D3A5814E8A96107502B51A /* SigmaSwiftStatistics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B9836C06662F6AF26CF13501848D275 /* iosMath-mathFonts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 872852C40DED47C7FE74D31A551F490A /* Build configuration list for PBXNativeTarget "iosMath-mathFonts" */;
+			buildPhases = (
+				25C28BE32341DC425CED7D9F0D678BF3 /* Sources */,
+				97F194C56E44F6A9EE08F8E324E69F03 /* Frameworks */,
+				FD7599278E3132BA1466752088303CED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iosMath-mathFonts";
+			productName = "iosMath-mathFonts";
+			productReference = A670E64F5BC2E29D460B5DC245E7EEDB /* mathFonts.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E5B2F702A8B0B2E4FE2AF5DD816057E7 /* iosMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39AA236A0DC28D1EB46C09EFF233564B /* Build configuration list for PBXNativeTarget "iosMath" */;
+			buildPhases = (
+				1D76559F2C773EA0A1F07D58D7AC9B26 /* Sources */,
+				002DC6976FFE451553166FE72ED68E9B /* Frameworks */,
+				F5F580BB02C8A0B2F75B2567C5BFCAB0 /* Resources */,
+				5A88019F8D610E5175778CD2389F980C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24C1EDAFEC84D6491EDA0F47B572CF1E /* PBXTargetDependency */,
+			);
+			name = iosMath;
+			productName = iosMath;
+			productReference = 64E803A394DEE9B08A95E04A92A8FE85 /* iosMath.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8CD5289E7FC1CB843A62959415429BFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5B2F702A8B0B2E4FE2AF5DD816057E7 /* iosMath */,
+				9B9836C06662F6AF26CF13501848D275 /* iosMath-mathFonts */,
+				2E905D070DF8B7CD9B3152113C26C059 /* Pods-OMKit */,
+				640503A70BAA0C77A7161E86D4351864 /* SigmaSwiftStatistics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5F580BB02C8A0B2F75B2567C5BFCAB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2B852333E2312754FDB1DCC6B011EF /* mathFonts.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7599278E3132BA1466752088303CED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E03E6526671FBEC932CDB823CF120C05 /* latinmodern-math.otf in Resources */,
+				B84181E34A1DE69138863445C3487A7E /* latinmodern-math.plist in Resources */,
+				6C8A47148EBD541AC12C11E60C51EF12 /* texgyretermes-math.otf in Resources */,
+				28ED3A0B865E123C4771247A91948365 /* texgyretermes-math.plist in Resources */,
+				C0A3B092E1F2A5BBE005A99C8E2D34F8 /* xits-math.otf in Resources */,
+				F3E07CDB17F36B181258FEB75A790849 /* xits-math.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D76559F2C773EA0A1F07D58D7AC9B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B3BF994E3D6D80EB8F3445347A41D4 /* iosMath-dummy.m in Sources */,
+				F66294E94F125ADE253B7D65C67D0754 /* MTFont.m in Sources */,
+				345ED928F89929FF0C0BDE7F03E28C73 /* MTFontManager.m in Sources */,
+				9FEBBD97E5221D1FFD9F76EF8DA0B20D /* MTFontMathTable.m in Sources */,
+				F3C49220F0A9F340CF968F2383991F88 /* MTLabel.m in Sources */,
+				15422D71098AD0862AE4119D739C075E /* MTMathAtomFactory.m in Sources */,
+				EF134C47FA11A70DB831CEF726F99C6B /* MTMathList.m in Sources */,
+				9832BE8BC2653B41124DC5360482D1E9 /* MTMathListBuilder.m in Sources */,
+				7C4732379298E1D5EB259E97B75A55B4 /* MTMathListDisplay.m in Sources */,
+				8237D2C7CA0BAA6702DFEFC18156C6FE /* MTMathListIndex.m in Sources */,
+				9B4C90885CF053F41318A1670C86CD6F /* MTMathUILabel.m in Sources */,
+				9D4F71C5ED696ECF7EE08CC4FC7E320F /* MTTypesetter.m in Sources */,
+				2E82EC8E7E191BB01B06896A5878EAEE /* MTUnicode.m in Sources */,
+				DDF7FE8E1BD267A3C40BCF279E383676 /* NSBezierPath+addLineToPoint.m in Sources */,
+				291DAF3612ECDA472EDFE4AE52B35D01 /* NSColor+HexString.m in Sources */,
+				360DF25B3613FC65E4AE08EBDD701A78 /* NSView+backgroundColor.m in Sources */,
+				FEE2C6E9682BFC48EF9F3DC176F4A29D /* UIColor+HexString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238863B3D3EAA5DBABEEDC105584A1E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A146E6154B5BF5328292D11EB362DEA /* Pods-OMKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C28BE32341DC425CED7D9F0D678BF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6760027D92FDB676E5554FED3422AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910FE2FD376FCDBC9FE4844CF15CA8FF /* CentralMoment.swift in Sources */,
+				9DD061E4FBCFAB0763285352AEE1A68B /* CoefficientVariation.swift in Sources */,
+				5B3ED01F24B792500663399937DBC33E /* Covariance.swift in Sources */,
+				ACC5899F1551DC62DD8FB18476925657 /* Frequencies.swift in Sources */,
+				E21CC1FB16198DCFE897BCD096DADB4B /* Kurtosis.swift in Sources */,
+				D3463266729B00E518587A0C226254D1 /* Median.swift in Sources */,
+				DD4D6A4C3338391140A64A9FBDE16011 /* Normal.swift in Sources */,
+				F819E5660DAEE98D5CE145D0C947ADC2 /* Pearson.swift in Sources */,
+				A4C692F36AED171BC4EAF8E58D402613 /* Percentile.swift in Sources */,
+				A0A1CB8EB6BD22723050211F52B2D7CE /* Quantiles.swift in Sources */,
+				6A79041147288ABE92B6E5E58B7BC0B0 /* Rank.swift in Sources */,
+				E1FA80428078AC02A148F090B2E6C24D /* Sigma.swift in Sources */,
+				F14E44C0C2E9BEAABD2B469C9E5D3676 /* SigmaSwiftStatistics-dummy.m in Sources */,
+				7845BB24860657524751831854B9F2D9 /* Skewness.swift in Sources */,
+				00409C74D5D00A0E602EF23B6DF5CCCA /* StandardDeviation.swift in Sources */,
+				4609226F4D9D35B1C6608CEDD1D66565 /* StandardErrorOfTheMean.swift in Sources */,
+				4D4CF11845BCDA16AB2CF50A6FCF599A /* UniqueValues.swift in Sources */,
+				145E01C795E68F405814ADD940D1451E /* Variance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24C1EDAFEC84D6491EDA0F47B572CF1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "iosMath-mathFonts";
+			target = 9B9836C06662F6AF26CF13501848D275 /* iosMath-mathFonts */;
+			targetProxy = DDF7C1A1C905720CE4A49027041AB104 /* PBXContainerItemProxy */;
+		};
+		4D62BB3AA6C49026004EF59EAF0FABF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iosMath;
+			target = E5B2F702A8B0B2E4FE2AF5DD816057E7 /* iosMath */;
+			targetProxy = F6D722563D459B570D2AFE0E375D5D80 /* PBXContainerItemProxy */;
+		};
+		52CD3B6B4214D6C8AB9483C956681F22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SigmaSwiftStatistics;
+			target = 640503A70BAA0C77A7161E86D4351864 /* SigmaSwiftStatistics */;
+			targetProxy = 50ED98D8191105F7D1BE62A936D5C4BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		89164D077A7B46620C8015074EA16041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EBB4FC813DDC1C7F9DAA2DEA26F58A8 /* Pods-OMKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OMKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OMKit/Pods-OMKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OMKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A3111E2636AD1E8EDE9D9686B2F8C277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ADE199765D202D83FD6FE097E2C93D7 /* SigmaSwiftStatistics.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SigmaSwiftStatistics/SigmaSwiftStatistics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SigmaSwiftStatistics/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SigmaSwiftStatistics/SigmaSwiftStatistics.modulemap";
+				PRODUCT_NAME = SigmaSwiftStatistics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACBA17EE8AFFEDA3B0BDEBA140C9A853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2E21E9BAA17659759D79D155BCF8A8 /* iosMath.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/iosMath";
+				INFOPLIST_FILE = "Target Support Files/iosMath/ResourceBundle-mathFonts-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = mathFonts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B6E16E37D1A34E2E4A83705233D2E439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2E21E9BAA17659759D79D155BCF8A8 /* iosMath.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/iosMath";
+				INFOPLIST_FILE = "Target Support Files/iosMath/ResourceBundle-mathFonts-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = mathFonts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C31E40EBFC2E247858EBC99CA47B3113 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2E21E9BAA17659759D79D155BCF8A8 /* iosMath.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iosMath/iosMath-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iosMath/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iosMath/iosMath.modulemap";
+				PRODUCT_NAME = iosMath;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C86D4F37FFDE99B5A2B2493A56E0F57C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60ADD329CA86ACB1600074D70298D07F /* Pods-OMKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OMKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OMKit/Pods-OMKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OMKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED024ADA39B82F6114904938C01BD98C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ADE199765D202D83FD6FE097E2C93D7 /* SigmaSwiftStatistics.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SigmaSwiftStatistics/SigmaSwiftStatistics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SigmaSwiftStatistics/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SigmaSwiftStatistics/SigmaSwiftStatistics.modulemap";
+				PRODUCT_NAME = SigmaSwiftStatistics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF0147B1DFBA1CEC3A0C0B27B2FA4F40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2E21E9BAA17659759D79D155BCF8A8 /* iosMath.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iosMath/iosMath-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iosMath/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iosMath/iosMath.modulemap";
+				PRODUCT_NAME = iosMath;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A4A36B66AECF81CBD61ED56496B7FCE /* Build configuration list for PBXNativeTarget "SigmaSwiftStatistics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3111E2636AD1E8EDE9D9686B2F8C277 /* Debug */,
+				ED024ADA39B82F6114904938C01BD98C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39AA236A0DC28D1EB46C09EFF233564B /* Build configuration list for PBXNativeTarget "iosMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF0147B1DFBA1CEC3A0C0B27B2FA4F40 /* Debug */,
+				C31E40EBFC2E247858EBC99CA47B3113 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		872852C40DED47C7FE74D31A551F490A /* Build configuration list for PBXNativeTarget "iosMath-mathFonts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E16E37D1A34E2E4A83705233D2E439 /* Debug */,
+				ACBA17EE8AFFEDA3B0BDEBA140C9A853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDE086A07DE388891674FA32ED9BC1D7 /* Build configuration list for PBXNativeTarget "Pods-OMKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89164D077A7B46620C8015074EA16041 /* Debug */,
+				C86D4F37FFDE99B5A2B2493A56E0F57C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
