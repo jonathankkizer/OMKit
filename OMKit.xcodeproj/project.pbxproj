@@ -21,6 +21,7 @@
 		AB65BDB81FE9F95C00101CEF /* eoqInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDB71FE9F95C00101CEF /* eoqInfoViewController.swift */; };
 		AB65BDBA1FEA072700101CEF /* epqInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDB91FEA072700101CEF /* epqInfoViewController.swift */; };
 		AB65BDBC1FEA073300101CEF /* stockCalculatorInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDBB1FEA073300101CEF /* stockCalculatorInfoViewController.swift */; };
+		ABBD59F81FEF486F00700CF4 /* NewsvendorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBD59F71FEF486F00700CF4 /* NewsvendorViewController.swift */; };
 		ABFADC231FEAE3D2006EE60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABFADC221FEAE3D2006EE60E /* Assets.xcassets */; };
 		E6A83FFB69529D309470B8A4 /* Pods_OMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519AEDB65DE740850850D17C /* Pods_OMKit.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		AB65BDB71FE9F95C00101CEF /* eoqInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eoqInfoViewController.swift; sourceTree = "<group>"; };
 		AB65BDB91FEA072700101CEF /* epqInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epqInfoViewController.swift; sourceTree = "<group>"; };
 		AB65BDBB1FEA073300101CEF /* stockCalculatorInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stockCalculatorInfoViewController.swift; sourceTree = "<group>"; };
+		ABBD59F71FEF486F00700CF4 /* NewsvendorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsvendorViewController.swift; sourceTree = "<group>"; };
 		ABFADC221FEAE3D2006EE60E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6ED6C2E0F8A1F996DD0B784 /* Pods-OMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-OMKit/Pods-OMKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 				AB65BDBB1FEA073300101CEF /* stockCalculatorInfoViewController.swift */,
 				AB65BDA81FE8BB7800101CEF /* MiscellaneousViewController.swift */,
 				AB4ADEFA1FEC7BFD006A0DCB /* miscellanousInfoViewController.swift */,
+				ABBD59F71FEF486F00700CF4 /* NewsvendorViewController.swift */,
 				AB65BDAD1FE8DC6100101CEF /* getDeviceScreenType.swift */,
 				ABFADC221FEAE3D2006EE60E /* Assets.xcassets */,
 				AB65BDAF1FE982A600101CEF /* numberFormat.swift */,
@@ -254,6 +257,7 @@
 			files = (
 				AB65BDB41FE9CBF200101CEF /* TabBarViewController.swift in Sources */,
 				AB65BDBA1FEA072700101CEF /* epqInfoViewController.swift in Sources */,
+				ABBD59F81FEF486F00700CF4 /* NewsvendorViewController.swift in Sources */,
 				AB65BDA91FE8BB7800101CEF /* MiscellaneousViewController.swift in Sources */,
 				AB65BDA71FE8BB7200101CEF /* StockCalculatorViewController.swift in Sources */,
 				AB65BDB01FE982A600101CEF /* numberFormat.swift in Sources */,
