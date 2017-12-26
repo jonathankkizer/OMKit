@@ -21,6 +21,7 @@
 		AB65BDB81FE9F95C00101CEF /* eoqInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDB71FE9F95C00101CEF /* eoqInfoViewController.swift */; };
 		AB65BDBA1FEA072700101CEF /* queueInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDB91FEA072700101CEF /* queueInfoViewController.swift */; };
 		AB65BDBC1FEA073300101CEF /* stockCalculatorInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDBB1FEA073300101CEF /* stockCalculatorInfoViewController.swift */; };
+		AB853EFB1FF3125300F51CAD /* newsvendorInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB853EFA1FF3125300F51CAD /* newsvendorInfoViewController.swift */; };
 		ABBD59F81FEF486F00700CF4 /* NewsvendorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBD59F71FEF486F00700CF4 /* NewsvendorViewController.swift */; };
 		ABBD59FA1FF0A1E000700CF4 /* EPQFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBD59F91FF0A1E000700CF4 /* EPQFormulas.swift */; };
 		ABFADC231FEAE3D2006EE60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABFADC221FEAE3D2006EE60E /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		AB65BDB71FE9F95C00101CEF /* eoqInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eoqInfoViewController.swift; sourceTree = "<group>"; };
 		AB65BDB91FEA072700101CEF /* queueInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = queueInfoViewController.swift; sourceTree = "<group>"; };
 		AB65BDBB1FEA073300101CEF /* stockCalculatorInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stockCalculatorInfoViewController.swift; sourceTree = "<group>"; };
+		AB853EFA1FF3125300F51CAD /* newsvendorInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsvendorInfoViewController.swift; sourceTree = "<group>"; };
 		ABBD59F71FEF486F00700CF4 /* NewsvendorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsvendorViewController.swift; sourceTree = "<group>"; };
 		ABBD59F91FF0A1E000700CF4 /* EPQFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPQFormulas.swift; sourceTree = "<group>"; };
 		ABFADC221FEAE3D2006EE60E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				AB65BDA81FE8BB7800101CEF /* MiscellaneousViewController.swift */,
 				AB4ADEFA1FEC7BFD006A0DCB /* miscellanousInfoViewController.swift */,
 				ABBD59F71FEF486F00700CF4 /* NewsvendorViewController.swift */,
+				AB853EFA1FF3125300F51CAD /* newsvendorInfoViewController.swift */,
 				AB65BDAD1FE8DC6100101CEF /* getDeviceScreenType.swift */,
 				ABBD59F91FF0A1E000700CF4 /* EPQFormulas.swift */,
 				ABFADC221FEAE3D2006EE60E /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 				AB65BDA51FE8BB6600101CEF /* QueueViewController.swift in Sources */,
 				AB65BDAE1FE8DC6100101CEF /* getDeviceScreenType.swift in Sources */,
 				ABBD59FA1FF0A1E000700CF4 /* EPQFormulas.swift in Sources */,
+				AB853EFB1FF3125300F51CAD /* newsvendorInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

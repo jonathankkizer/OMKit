@@ -11,6 +11,7 @@ import UIKit
 class stockCalculatorInfoViewController: UIViewController {
     
     override func viewDidLoad() {
+        self.title = "About Safety Stock"
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

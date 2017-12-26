@@ -11,6 +11,7 @@ import UIKit
 class miscellanousInfoViewController: UIViewController {
 
     override func viewDidLoad() {
+        self.title = "About Average Inventory"
         super.viewDidLoad()
         //Get the first (and only) subview of the scrollView.
         //let subview = theScrollView.subviews[0] as! UIView;
