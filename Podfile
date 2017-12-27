@@ -6,7 +6,6 @@ target 'OMKit' do
   use_frameworks!
 
   # Pods for OMKit
-  pod 'iosMath'
   pod 'SigmaSwiftStatistics', '~> 7.0'
 
 end

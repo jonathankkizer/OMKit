@@ -20,7 +20,7 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var newsvendorCostOverage: UITextField!
     @IBOutlet weak var criticalRatioLabel: UILabel!
     @IBOutlet weak var newsvendorLabel: UILabel!
-    var newsvendorProbDist: String = "Normal"
+    var newsvendorProbDist: String = "Normal (μ, σ)"
     
     var pickerData: [String] = [String]()
     
@@ -30,7 +30,7 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         // picker initializations
         self.newsvendorDistPicker.delegate = self
         self.newsvendorDistPicker.dataSource = self
-        pickerData = ["Normal", "Poisson"]
+        pickerData = ["Normal (μ, σ)", "Poisson (λ)"]
         
         hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
@@ -53,10 +53,10 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         newsvendorProbDist = pickerData[row]
-        if newsvendorProbDist == "Poisson" {
+        if newsvendorProbDist == "Poisson (λ)" {
             newsvendorMu.placeholder = "λ"
             newsvendorSigma.placeholder = "√λ"
-        } else if newsvendorProbDist == "Normal" {
+        } else if newsvendorProbDist == "Normal (μ, σ)" {
             newsvendorMu.placeholder = "μ"
             newsvendorSigma.placeholder = "σ"
         }
@@ -65,8 +65,8 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     @IBAction func newsvendorCalculateButtonPress(_ sender: Any) {
-        // calculates the standard deviation for poisson distribution, inserts it so it passes the next check
-        if (newsvendorProbDist == "Poisson") && (newsvendorMu.text?.isEmpty == false) {
+        // calculates the standard deviation for Poisson (λ) distribution, inserts it so it passes the next check
+        if (newsvendorProbDist == "Poisson (λ)") && (newsvendorMu.text?.isEmpty == false) {
             var intermediateSigma: Double = Double(newsvendorMu.text!)!
             newsvendorSigma.text = formatMathSolution(value: intermediateSigma.squareRoot())
         }
@@ -104,7 +104,7 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         var newsvendorCostUnderageDouble: Double = Double(newsvendorCostUnderage.text!)!
         var newsvendorCostOverageDouble: Double = Double(newsvendorCostOverage.text!)!
         
-        if newsvendorProbDist == "Normal" {
+        if newsvendorProbDist == "Normal (μ, σ)" {
             var critRatioDouble: Double = Double(newsvendorCostUnderageDouble / (newsvendorCostOverageDouble + newsvendorCostUnderageDouble))
             var critRatioZScore: Double = Sigma.normalQuantile(p: critRatioDouble)!
             var newsvendorQuantityDouble: Double = newsvendorMuDouble + (newsvendorSigmaDouble * critRatioZScore)
@@ -113,7 +113,7 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
             criticalRatioLabel.isHidden = false
             newsvendorLabel.isHidden = false
             
-        } else if newsvendorProbDist == "Poisson" {
+        } else if newsvendorProbDist == "Poisson (λ)" {
             if newsvendorMuDouble >= Double(1000) {
                 var critRatioDouble: Double = Double(newsvendorCostUnderageDouble / (newsvendorCostOverageDouble + newsvendorCostUnderageDouble))
                 var critRatioZScore: Double = Sigma.normalQuantile(p: critRatioDouble)!
@@ -123,7 +123,7 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
                 criticalRatioLabel.isHidden = false
                 newsvendorLabel.isHidden = false
             } else {
-                self.alertController = UIAlertController(title: "Error", message: "Poisson distribution λ should be greater than 1000 for accurate results", preferredStyle: UIAlertControllerStyle.alert)
+                self.alertController = UIAlertController(title: "Error", message: "Poisson (λ) distribution λ should be greater than 1000 for accurate results", preferredStyle: UIAlertControllerStyle.alert)
                 let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
                 }
                 self.alertController!.addAction(OKAction)

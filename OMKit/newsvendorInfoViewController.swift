@@ -1,17 +1,17 @@
 //
-//  queueInfoViewController.swift
+//  newsvendorInfoViewController.swift
 //  OMKit
 //
-//  Created by Jonathan Kizer on 12/19/17.
+//  Created by Jonathan Kizer on 12/26/17.
 //  Copyright © 2017 Kizer Co. All rights reserved.
 //
 
 import UIKit
 
-class queueInfoViewController: UIViewController {
-    
+class newsvendorInfoViewController: UIViewController {
+
     override func viewDidLoad() {
-        self.title = "About Queue Theory"
+        self.title = "About Newsvendor"
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
