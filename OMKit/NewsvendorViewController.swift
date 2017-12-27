@@ -37,6 +37,10 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         criticalRatioLabel.isHidden = true
         newsvendorLabel.isHidden = true
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.title = "Newsvendor"
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

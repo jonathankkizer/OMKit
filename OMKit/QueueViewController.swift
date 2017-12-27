@@ -232,13 +232,11 @@ class QueueViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // How to retitle "Back" button so it doesn't just inherent the title of the last screen
+        let backItem = UIBarButtonItem()
+        backItem.title = "Back"
+        navigationItem.backBarButtonItem = backItem
         
-        if let queueInfoViewController = segue.destination as? queueInfoViewController {
-            // How to retitle "Back" button so it doesn't just inherent the title of the last screen
-            let backItem = UIBarButtonItem()
-            backItem.title = "Back"
-            navigationItem.backBarButtonItem = backItem
-        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

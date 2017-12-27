@@ -12,6 +12,7 @@ class queueInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         self.title = "About Queue Theory"
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
