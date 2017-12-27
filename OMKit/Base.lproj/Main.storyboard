@@ -254,14 +254,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqX-7b-1Gh">
-                                <rect key="frame" x="143" y="473" width="37" height="30"/>
-                                <state key="normal" title="Clear"/>
-                                <connections>
-                                    <action selector="eoqClearButton:" destination="2jT-5N-Taf" eventType="touchUpInside" id="NB2-h0-ax1"/>
-                                    <action selector="safetyStockClearPress:" destination="qlw-R8-bL3" eventType="touchUpInside" id="iMb-c5-OHf"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cost per Unit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyJ-5c-lMS">
                                 <rect key="frame" x="8" y="229" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -298,6 +290,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqX-7b-1Gh">
+                                <rect key="frame" x="142" y="472" width="37" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="eoqClearButton:" destination="2jT-5N-Taf" eventType="touchUpInside" id="NB2-h0-ax1"/>
+                                    <action selector="safetyStockClearPress:" destination="qlw-R8-bL3" eventType="touchUpInside" id="iMb-c5-OHf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -314,7 +314,7 @@
                             <constraint firstItem="bWF-eR-Wti" firstAttribute="leading" secondItem="eok-UE-eR8" secondAttribute="trailing" constant="49" id="9n8-Px-8JH"/>
                             <constraint firstItem="gvx-jS-v5U" firstAttribute="top" secondItem="Rdf-Pl-zFF" secondAttribute="bottom" constant="8" symbolic="YES" id="ASG-9X-Bh1"/>
                             <constraint firstItem="EWc-EG-Rl6" firstAttribute="trailing" secondItem="elT-31-n9E" secondAttribute="trailing" id="Dbi-xQ-ghA"/>
-                            <constraint firstItem="1EN-9x-afZ" firstAttribute="trailing" secondItem="uqX-7b-1Gh" secondAttribute="trailing" constant="140" id="DkH-qs-JJA"/>
+                            <constraint firstItem="1EN-9x-afZ" firstAttribute="trailing" secondItem="uqX-7b-1Gh" secondAttribute="trailing" constant="141" id="DkH-qs-JJA"/>
                             <constraint firstItem="9SK-U9-pW6" firstAttribute="trailing" secondItem="3bj-Tq-Znw" secondAttribute="trailing" id="FYO-Jf-4cg"/>
                             <constraint firstItem="gvx-jS-v5U" firstAttribute="leading" secondItem="Rdf-Pl-zFF" secondAttribute="leading" id="Gkl-Va-dkH"/>
                             <constraint firstItem="Rdf-Pl-zFF" firstAttribute="top" secondItem="1EN-9x-afZ" secondAttribute="top" constant="46" id="Ifc-J6-hL0"/>
@@ -358,12 +358,12 @@
                             <constraint firstItem="Uez-Po-R5C" firstAttribute="top" secondItem="9SK-U9-pW6" secondAttribute="bottom" constant="8" symbolic="YES" id="tpP-rk-i9g"/>
                             <constraint firstItem="EWc-EG-Rl6" firstAttribute="centerY" secondItem="bMZ-nO-efN" secondAttribute="centerY" id="vUC-Sh-qlt"/>
                             <constraint firstItem="oRy-hv-RGU" firstAttribute="centerX" secondItem="uTE-Pt-GyV" secondAttribute="centerX" id="vjN-XV-OKe"/>
-                            <constraint firstItem="uqX-7b-1Gh" firstAttribute="leading" secondItem="1EN-9x-afZ" secondAttribute="leading" constant="143" id="wR3-ki-FKj"/>
+                            <constraint firstItem="uqX-7b-1Gh" firstAttribute="leading" secondItem="1EN-9x-afZ" secondAttribute="leading" constant="142" id="wR3-ki-FKj"/>
                             <constraint firstItem="bWF-eR-Wti" firstAttribute="baseline" secondItem="eok-UE-eR8" secondAttribute="baseline" id="wim-i2-m3h"/>
                             <constraint firstItem="elT-31-n9E" firstAttribute="leading" secondItem="1EN-9x-afZ" secondAttribute="leading" constant="232" id="xAJ-AW-FR6"/>
                             <constraint firstItem="oyJ-5c-lMS" firstAttribute="leading" secondItem="vCF-Oi-LbH" secondAttribute="leading" id="ycd-9e-7S1"/>
                             <constraint firstItem="elT-31-n9E" firstAttribute="leading" secondItem="Uez-Po-R5C" secondAttribute="trailing" constant="52" id="zdj-Ei-0LX"/>
-                            <constraint firstItem="uqX-7b-1Gh" firstAttribute="top" secondItem="oRy-hv-RGU" secondAttribute="bottom" constant="9" id="zwk-rj-fU4"/>
+                            <constraint firstItem="uqX-7b-1Gh" firstAttribute="top" secondItem="oRy-hv-RGU" secondAttribute="bottom" constant="8" id="zwk-rj-fU4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1EN-9x-afZ"/>
                     </view>
@@ -844,13 +844,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzY-Ru-ccq">
-                                <rect key="frame" x="141" y="474" width="36" height="30"/>
-                                <state key="normal" title="Clear"/>
-                                <connections>
-                                    <action selector="queueClearButtonPress:" destination="qvz-TA-fRv" eventType="touchUpInside" id="Vyi-cD-Kq5"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Server Utilization:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yC8-ma-bWR">
                                 <rect key="frame" x="9" y="457" width="135" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -863,6 +856,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzY-Ru-ccq">
+                                <rect key="frame" x="142" y="475" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="queueClearButtonPress:" destination="qvz-TA-fRv" eventType="touchUpInside" id="Vyi-cD-Kq5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -892,7 +892,7 @@
                             <constraint firstItem="1kx-iK-Osg" firstAttribute="leading" secondItem="3Xf-NK-atS" secondAttribute="leading" id="I2h-mt-g6m"/>
                             <constraint firstItem="SaZ-fS-3Qy" firstAttribute="leading" secondItem="qI1-xm-swR" secondAttribute="leading" id="INO-gR-ZCa"/>
                             <constraint firstItem="8x8-X8-H7l" firstAttribute="leading" secondItem="nl7-o1-92V" secondAttribute="trailing" constant="83" id="JkA-ks-VRz"/>
-                            <constraint firstItem="qI1-xm-swR" firstAttribute="centerX" secondItem="EzY-Ru-ccq" secondAttribute="centerX" id="KVQ-Fa-rdu"/>
+                            <constraint firstItem="qI1-xm-swR" firstAttribute="centerX" secondItem="EzY-Ru-ccq" secondAttribute="centerX" constant="-1" id="KVQ-Fa-rdu"/>
                             <constraint firstItem="8uj-qg-xQm" firstAttribute="leading" secondItem="71O-LR-mDl" secondAttribute="leading" id="LAF-NB-ZAu"/>
                             <constraint firstItem="paj-Jj-iOb" firstAttribute="trailing" secondItem="8x8-X8-H7l" secondAttribute="trailing" id="LIL-xD-moP"/>
                             <constraint firstItem="SaZ-fS-3Qy" firstAttribute="top" secondItem="tkA-Zc-LgY" secondAttribute="bottom" id="OGf-jh-gA7"/>
@@ -911,7 +911,7 @@
                             <constraint firstItem="FRr-fO-USf" firstAttribute="top" secondItem="EGD-xc-4uD" secondAttribute="bottom" constant="10" id="dfQ-vu-CO8"/>
                             <constraint firstItem="FRr-fO-USf" firstAttribute="centerX" secondItem="xZg-XH-ioS" secondAttribute="centerX" id="e8G-qb-3It"/>
                             <constraint firstItem="3hI-vZ-iqk" firstAttribute="trailing" secondItem="eET-rx-GDS" secondAttribute="trailing" constant="29" id="eaR-pD-N2i"/>
-                            <constraint firstItem="EzY-Ru-ccq" firstAttribute="top" secondItem="GJx-Xw-Nap" secondAttribute="bottom" constant="81" id="eeC-At-93b"/>
+                            <constraint firstItem="EzY-Ru-ccq" firstAttribute="top" secondItem="GJx-Xw-Nap" secondAttribute="bottom" constant="82" id="eeC-At-93b"/>
                             <constraint firstItem="qI1-xm-swR" firstAttribute="top" secondItem="Voy-u2-M3S" secondAttribute="bottom" constant="2" id="fDW-iY-Aet"/>
                             <constraint firstItem="K9n-GZ-uGh" firstAttribute="leading" secondItem="1kx-iK-Osg" secondAttribute="leading" id="fUp-xi-Bio"/>
                             <constraint firstItem="3hI-vZ-iqk" firstAttribute="trailing" secondItem="KJG-qp-yc9" secondAttribute="trailing" constant="7" id="ffw-2u-hoS"/>
