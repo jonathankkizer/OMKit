@@ -30,6 +30,7 @@ class QueueViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var numServers: UITextField!
     @IBOutlet weak var queueTimeSolution: UILabel!
     @IBOutlet weak var inQueueSolution: UILabel!
+    @IBOutlet weak var serverUtilizationSolution: UILabel!
     
     
     var interarrivalTimesDist: String = "Normal (μ, σ)"
@@ -60,6 +61,7 @@ class QueueViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         queueTimeSolution.isHidden = true
         inQueueSolution.isHidden = true
+        serverUtilizationSolution.isHidden = true
         
         // hide solution labels
         
@@ -175,9 +177,11 @@ class QueueViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         numServers.text = ""
         queueTimeSolution.text = ""
         inQueueSolution.text = ""
+        serverUtilizationSolution.text = ""
         
         queueTimeSolution.isHidden = true
         inQueueSolution.isHidden = true
+        serverUtilizationSolution.isHidden = true
         
     }
     
@@ -202,6 +206,8 @@ class QueueViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         var queueTheorySolutionDouble: Double = eqPt1 * eqPt2 * eqPt3
         
         // formatted solution & answer label insertion
+        var utilizationDouble: Double = utilization * Double(100)
+        
         var inQueueSolutionDouble: Double = queueTheorySolutionDouble / interarrivalTimesMuDouble
         
         if queueTheorySolutionDouble <= Double(0) {
@@ -211,13 +217,15 @@ class QueueViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         if inQueueSolutionDouble <= Double(0) {
             queueTheorySolutionDouble = Double(0)
         }
-        
+        var utilizationFormatted: String = formatMathPercentageSolution(value: utilizationDouble)
         var QueueTheorySolutionFormatted: String = formatMathSolution(value: queueTheorySolutionDouble)
         var inQueueSolutionFormatted: String = formatMathSolution(value: inQueueSolutionDouble)
         queueTimeSolution.text = QueueTheorySolutionFormatted
         inQueueSolution.text = inQueueSolutionFormatted
+        serverUtilizationSolution.text = utilizationFormatted
         queueTimeSolution.isHidden = false
         inQueueSolution.isHidden = false
+        serverUtilizationSolution.isHidden = false
     }
     
     // MARK: - Navigation

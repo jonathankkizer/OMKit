@@ -16,6 +16,15 @@ func formatMathSolution(value: Double) -> String {
     return result!
 }
 
+func formatMathPercentageSolution(value: Double) -> String {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .decimal
+    formatter.maximumFractionDigits = 3
+    var result = formatter.string(from: value as NSNumber)
+    result = result! + "%"
+    return result!
+}
+
 // receives a double and converts it to a currency format (USD)
 func formatCurrencyUSD(value: Double) -> String {
     let formatter = NumberFormatter()
