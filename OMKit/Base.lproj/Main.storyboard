@@ -968,10 +968,10 @@
             </objects>
             <point key="canvasLocation" x="-789.375" y="217.6056338028169"/>
         </scene>
-        <!--Epq Info View Controller-->
+        <!--Queue Info View Controller-->
         <scene sceneID="uCx-ks-xEB">
             <objects>
-                <viewController storyboardIdentifier="epqInfoViewController" id="jhf-Oq-v6t" customClass="epqInfoViewController" customModule="OMKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="epqInfoViewController" id="jhf-Oq-v6t" customClass="queueInfoViewController" customModule="OMKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qg6-yx-KNt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -137,14 +137,19 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        // How to retitle "Back" button so it doesn't just inherent the title of the last screen
+        let backItem = UIBarButtonItem()
+        backItem.title = "Back"
+        navigationItem.backBarButtonItem = backItem
+        
     }
-    */
+    
 
 }
