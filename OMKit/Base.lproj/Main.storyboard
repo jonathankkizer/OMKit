@@ -290,7 +290,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqX-7b-1Gh">
-                                <rect key="frame" x="142" y="472" width="37" height="30"/>
+                                <rect key="frame" x="142" y="475" width="37" height="30"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="eoqClearButton:" destination="2jT-5N-Taf" eventType="touchUpInside" id="NB2-h0-ax1"/>
@@ -362,7 +362,7 @@
                             <constraint firstItem="elT-31-n9E" firstAttribute="leading" secondItem="1EN-9x-afZ" secondAttribute="leading" constant="232" id="xAJ-AW-FR6"/>
                             <constraint firstItem="oyJ-5c-lMS" firstAttribute="leading" secondItem="vCF-Oi-LbH" secondAttribute="leading" id="ycd-9e-7S1"/>
                             <constraint firstItem="elT-31-n9E" firstAttribute="leading" secondItem="Uez-Po-R5C" secondAttribute="trailing" constant="52" id="zdj-Ei-0LX"/>
-                            <constraint firstItem="uqX-7b-1Gh" firstAttribute="top" secondItem="oRy-hv-RGU" secondAttribute="bottom" constant="8" id="zwk-rj-fU4"/>
+                            <constraint firstItem="uqX-7b-1Gh" firstAttribute="top" secondItem="oRy-hv-RGU" secondAttribute="bottom" constant="11" id="zwk-rj-fU4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1EN-9x-afZ"/>
                     </view>
