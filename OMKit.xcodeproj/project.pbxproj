@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB4ADEFB1FEC7BFD006A0DCB /* miscellanousInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ADEFA1FEC7BFD006A0DCB /* miscellanousInfoViewController.swift */; };
+		AB4ADEFB1FEC7BFD006A0DCB /* averageInventoryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ADEFA1FEC7BFD006A0DCB /* averageInventoryInfoViewController.swift */; };
 		AB65BD911FE8B59600101CEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BD901FE8B59600101CEF /* AppDelegate.swift */; };
 		AB65BD961FE8B59600101CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB65BD941FE8B59600101CEF /* Main.storyboard */; };
 		AB65BD9B1FE8B59600101CEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB65BD991FE8B59600101CEF /* LaunchScreen.storyboard */; };
 		AB65BDA31FE8BB5D00101CEF /* EOQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDA21FE8BB5D00101CEF /* EOQViewController.swift */; };
 		AB65BDA51FE8BB6600101CEF /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDA41FE8BB6600101CEF /* QueueViewController.swift */; };
 		AB65BDA71FE8BB7200101CEF /* StockCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDA61FE8BB7200101CEF /* StockCalculatorViewController.swift */; };
-		AB65BDA91FE8BB7800101CEF /* MiscellaneousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDA81FE8BB7800101CEF /* MiscellaneousViewController.swift */; };
+		AB65BDA91FE8BB7800101CEF /* AverageInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDA81FE8BB7800101CEF /* AverageInventoryViewController.swift */; };
 		AB65BDAE1FE8DC6100101CEF /* getDeviceScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDAD1FE8DC6100101CEF /* getDeviceScreenType.swift */; };
 		AB65BDB01FE982A600101CEF /* numberFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDAF1FE982A600101CEF /* numberFormat.swift */; };
 		AB65BDB41FE9CBF200101CEF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65BDB31FE9CBF200101CEF /* TabBarViewController.swift */; };
@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		519AEDB65DE740850850D17C /* Pods_OMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEF31D0B8C2F44553BB48B0 /* Pods-OMKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OMKit/Pods-OMKit.debug.xcconfig"; sourceTree = "<group>"; };
-		AB4ADEFA1FEC7BFD006A0DCB /* miscellanousInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miscellanousInfoViewController.swift; sourceTree = "<group>"; };
+		AB4ADEFA1FEC7BFD006A0DCB /* averageInventoryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = averageInventoryInfoViewController.swift; sourceTree = "<group>"; };
 		AB65BD8D1FE8B59600101CEF /* OMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB65BD901FE8B59600101CEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB65BD951FE8B59600101CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		AB65BDA21FE8BB5D00101CEF /* EOQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOQViewController.swift; sourceTree = "<group>"; };
 		AB65BDA41FE8BB6600101CEF /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
 		AB65BDA61FE8BB7200101CEF /* StockCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCalculatorViewController.swift; sourceTree = "<group>"; };
-		AB65BDA81FE8BB7800101CEF /* MiscellaneousViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscellaneousViewController.swift; sourceTree = "<group>"; };
+		AB65BDA81FE8BB7800101CEF /* AverageInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageInventoryViewController.swift; sourceTree = "<group>"; };
 		AB65BDAA1FE8CCE000101CEF /* OMKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OMKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB65BDAD1FE8DC6100101CEF /* getDeviceScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDeviceScreenType.swift; sourceTree = "<group>"; };
 		AB65BDAF1FE982A600101CEF /* numberFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numberFormat.swift; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 				AB65BDB91FEA072700101CEF /* queueInfoViewController.swift */,
 				AB65BDA61FE8BB7200101CEF /* StockCalculatorViewController.swift */,
 				AB65BDBB1FEA073300101CEF /* stockCalculatorInfoViewController.swift */,
-				AB65BDA81FE8BB7800101CEF /* MiscellaneousViewController.swift */,
-				AB4ADEFA1FEC7BFD006A0DCB /* miscellanousInfoViewController.swift */,
+				AB65BDA81FE8BB7800101CEF /* AverageInventoryViewController.swift */,
+				AB4ADEFA1FEC7BFD006A0DCB /* averageInventoryInfoViewController.swift */,
 				ABBD59F71FEF486F00700CF4 /* NewsvendorViewController.swift */,
 				AB853EFA1FF3125300F51CAD /* newsvendorInfoViewController.swift */,
 				AB65BDAD1FE8DC6100101CEF /* getDeviceScreenType.swift */,
@@ -262,14 +262,14 @@
 				AB65BDB41FE9CBF200101CEF /* TabBarViewController.swift in Sources */,
 				AB65BDBA1FEA072700101CEF /* queueInfoViewController.swift in Sources */,
 				ABBD59F81FEF486F00700CF4 /* NewsvendorViewController.swift in Sources */,
-				AB65BDA91FE8BB7800101CEF /* MiscellaneousViewController.swift in Sources */,
+				AB65BDA91FE8BB7800101CEF /* AverageInventoryViewController.swift in Sources */,
 				AB65BDA71FE8BB7200101CEF /* StockCalculatorViewController.swift in Sources */,
 				AB65BDB01FE982A600101CEF /* numberFormat.swift in Sources */,
 				AB65BDB81FE9F95C00101CEF /* eoqInfoViewController.swift in Sources */,
 				AB65BDA31FE8BB5D00101CEF /* EOQViewController.swift in Sources */,
 				AB65BDBC1FEA073300101CEF /* stockCalculatorInfoViewController.swift in Sources */,
 				AB65BD911FE8B59600101CEF /* AppDelegate.swift in Sources */,
-				AB4ADEFB1FEC7BFD006A0DCB /* miscellanousInfoViewController.swift in Sources */,
+				AB4ADEFB1FEC7BFD006A0DCB /* averageInventoryInfoViewController.swift in Sources */,
 				AB65BDA51FE8BB6600101CEF /* QueueViewController.swift in Sources */,
 				AB65BDAE1FE8DC6100101CEF /* getDeviceScreenType.swift in Sources */,
 				ABBD59FA1FF0A1E000700CF4 /* EPQFormulas.swift in Sources */,
@@ -415,6 +415,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QDNBA629H;
 				INFOPLIST_FILE = OMKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kizerCo.OMKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,6 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QDNBA629H;
 				INFOPLIST_FILE = OMKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kizerCo.OMKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

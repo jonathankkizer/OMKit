@@ -8,13 +8,13 @@
 
 import UIKit
 
-class miscellanousInfoViewController: UIViewController {
+class averageInventoryInfoViewController: UIViewController {
 
     override func viewDidLoad() {
-        self.title = "About Average Inventory"
         super.viewDidLoad()
+        navigationItem.largeTitleDisplayMode = .never
+        self.title = "About Average Inventory"
         //Get the first (and only) subview of the scrollView.
-        //let subview = theScrollView.subviews[0] as! UIView;
         
         //Make the scroll view's contentSize the same size as the content view.
         //theScrollView!.contentSize = subview.bounds.size;

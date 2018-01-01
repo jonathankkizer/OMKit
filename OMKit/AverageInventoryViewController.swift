@@ -9,7 +9,7 @@
 import UIKit
 import SigmaSwiftStatistics
 
-class MiscellaneousViewController: UIViewController {
+class AverageInventoryViewController: UIViewController {
     
     var alertController:UIAlertController? = nil
     
@@ -20,11 +20,13 @@ class MiscellaneousViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.topItem?.title = "Average Inventory Level"
+        iOS11NavBarDesign()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        iOS11NavBarDesign()
 
         // Do any additional setup after loading the view.
     }
@@ -37,7 +39,7 @@ class MiscellaneousViewController: UIViewController {
     @IBAction func ailCalculateButtonPress(_ sender: Any) {
         var blankButtonCheck: Bool = ailBlankCheck()
         if blankButtonCheck == false {
-            self.alertController = UIAlertController(title: "Error", message: "Enter a value for all but one field; the blank field will be calculated", preferredStyle: UIAlertControllerStyle.alert)
+            self.alertController = UIAlertController(title: "Error", message: "Enter a value for all but Projected Inventory Level.", preferredStyle: UIAlertControllerStyle.alert)
             
             let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
             }
@@ -46,17 +48,32 @@ class MiscellaneousViewController: UIViewController {
         } else {
             if currentInventoryLevel.text == "" {
                 // solve for current inventory level
+                self.alertController = UIAlertController(title: "Error", message: "Enter a value for all but Projected Inventory Level.", preferredStyle: UIAlertControllerStyle.alert)
                 
+                let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
+                }
+                self.alertController!.addAction(OKAction)
+                self.present(self.alertController!, animated: true, completion:nil)
                 
                 
             } else if currentNumLocations.text == "" {
                 // solve for current number of locations
+                self.alertController = UIAlertController(title: "Error", message: "Enter a value for all but Projected Inventory Level.", preferredStyle: UIAlertControllerStyle.alert)
                 
+                let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
+                }
+                self.alertController!.addAction(OKAction)
+                self.present(self.alertController!, animated: true, completion:nil)
                 
                 
             } else if projectedNumLocations.text == "" {
                 // solve for projected number of locations
+                self.alertController = UIAlertController(title: "Error", message: "Enter a value for all but Projected Inventory Level.", preferredStyle: UIAlertControllerStyle.alert)
                 
+                let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
+                }
+                self.alertController!.addAction(OKAction)
+                self.present(self.alertController!, animated: true, completion:nil)
                 
                 
             } else if projectedInventoryLevel.text == "" {
@@ -99,14 +116,27 @@ class MiscellaneousViewController: UIViewController {
         }
     }
     
-    /*
+    func iOS11NavBarDesign() {
+        let deviceType: String = getDeviceScreenType()
+        if deviceType == "iPhone5.8" || deviceType == "iPhone5.5" || deviceType == "iPhone4.7" {
+            self.navigationController?.navigationBar.topItem?.title = "Inventory Level"
+            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        }
+    }
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = "Back"
+        navigationItem.backBarButtonItem = backItem
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+ 
 
 }

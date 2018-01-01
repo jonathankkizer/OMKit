@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -393,10 +392,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="-458.45070422535213"/>
         </scene>
-        <!--Miscellaneous View Controller-->
+        <!--Average Inventory View Controller-->
         <scene sceneID="K3M-El-zbT">
             <objects>
-                <viewController storyboardIdentifier="AboutViewController" id="lJd-qv-pxc" customClass="MiscellaneousViewController" customModule="OMKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewController" id="lJd-qv-pxc" customClass="AverageInventoryViewController" customModule="OMKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2wc-wu-qaQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -542,10 +541,10 @@
             </objects>
             <point key="canvasLocation" x="751.875" y="222.88732394366198"/>
         </scene>
-        <!--Miscellanous Info View Controller-->
+        <!--Average Inventory Info View Controller-->
         <scene sceneID="lqb-qD-Fmc">
             <objects>
-                <viewController id="wz8-ii-AdU" customClass="miscellanousInfoViewController" customModule="OMKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wz8-ii-AdU" customClass="averageInventoryInfoViewController" customModule="OMKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fSe-L2-PmV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

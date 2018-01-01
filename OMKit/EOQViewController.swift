@@ -25,14 +25,13 @@ class EOQViewController: UIViewController {
     @IBOutlet weak var eoqHoldingOrderingCosts: UILabel!
     @IBOutlet weak var eoqTotalCost: UILabel!
     
-    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.topItem?.title = "Economic Order Model"
+        iOS11NavBarDesign()
     }
     
     override func viewDidLoad() {
         
-        //self.navigationController?.navigationBar.barTintColor = UIColor.blue
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
         //let formulaRect = setEOQFormulaRect()
@@ -47,6 +46,8 @@ class EOQViewController: UIViewController {
         eoqOptimalOrderQuantity.isHidden = true
         eoqHoldingOrderingCosts.isHidden = true
         eoqTotalCost.isHidden = true
+        
+        iOS11NavBarDesign()
 
         // Do any additional setup after loading the view.
     }
@@ -81,6 +82,15 @@ class EOQViewController: UIViewController {
         eoqOptimalOrderQuantity.isHidden = true
         eoqHoldingOrderingCosts.isHidden = true
         eoqTotalCost.isHidden = true
+    }
+    
+    func iOS11NavBarDesign() {
+        let deviceType: String = getDeviceScreenType()
+        if deviceType == "iPhone5.8" || deviceType == "iPhone5.5" || deviceType == "iPhone4.7" {
+            self.navigationController?.navigationBar.topItem?.title = "EOQ Model"
+            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        }
     }
     
     func eoqModelSolution() {
@@ -128,7 +138,7 @@ class EOQViewController: UIViewController {
         return formatCurrencyUSD(value: eoqTotalCosts)
     }
     
-    func setEOQFormulaRect() -> CGRect? {
+    /*func setEOQFormulaRect() -> CGRect? {
         let deviceScreenType = getDeviceScreenType()
         if deviceScreenType == "iPhone4.7" {
             let formulaRect = CGRect(origin: CGPoint(x: 10, y: 207.5),
@@ -148,7 +158,7 @@ class EOQViewController: UIViewController {
             return formulaRect
         }
         return nil
-    }
+    }*/
 
     
     // MARK: - Navigation

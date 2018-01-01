@@ -12,6 +12,7 @@ class newsvendorInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         self.title = "About Newsvendor"
+        navigationItem.largeTitleDisplayMode = .never
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

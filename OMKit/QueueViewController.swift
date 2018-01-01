@@ -59,12 +59,12 @@ class QueueViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         updatePlaceHolderText(whichPicker: "processingTimesPicker")
         hideKeyboardWhenTappedAround()
         
+        // hide solution labels
         queueTimeSolution.isHidden = true
         inQueueSolution.isHidden = true
         serverUtilizationSolution.isHidden = true
         
-        // hide solution labels
-        
+        iOS11NavBarDesign()
         
         // Do any additional setup after loading the view.
     }
@@ -239,6 +239,15 @@ class QueueViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+    }
+    
+    func iOS11NavBarDesign() {
+        let deviceType: String = getDeviceScreenType()
+        if deviceType == "iPhone5.8" || deviceType == "iPhone5.5" || deviceType == "iPhone4.7" {
+            self.navigationController?.navigationBar.topItem?.title = "Queue Theory"
+            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        }
     }
     
 }

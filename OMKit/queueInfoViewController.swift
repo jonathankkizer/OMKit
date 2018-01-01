@@ -13,6 +13,7 @@ class queueInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "About Queue Theory"
+        navigationItem.largeTitleDisplayMode = .never
         // Do any additional setup after loading the view.
     }
 

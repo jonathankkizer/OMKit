@@ -30,6 +30,7 @@ class StockCalculatorViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.topItem?.title = "Safety Stock"
+        iOS11NavBarDesign()
     }
     
     override func viewDidLoad() {
@@ -42,7 +43,8 @@ class StockCalculatorViewController: UIViewController {
         safetyStockSolution.isHidden = true
         safetyStockTotalCostLabel.isHidden = true
         
-        // CGRect based on whether or not toggle is enabled
+        iOS11NavBarDesign()
+        
         //var safetyStockFormulaRect = setSafetyFormulaRectToggleEnabled()
 
         // Do any additional setup after loading the view.
@@ -218,6 +220,15 @@ class StockCalculatorViewController: UIViewController {
             return formulaRect
         }
         return nil
+    }
+    
+    func iOS11NavBarDesign() {
+        let deviceType: String = getDeviceScreenType()
+        if deviceType == "iPhone5.8" || deviceType == "iPhone5.5" || deviceType == "iPhone4.7" {
+            self.navigationController?.navigationBar.topItem?.title = "Safety Stock"
+            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        }
     }
     // MARK: - Navigation
 

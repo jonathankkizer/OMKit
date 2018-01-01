@@ -27,6 +27,8 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        iOS11NavBarDesign()
+        
         // picker initializations
         self.newsvendorDistPicker.delegate = self
         self.newsvendorDistPicker.dataSource = self
@@ -40,6 +42,7 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     override func viewWillAppear(_ animated: Bool) {
         self.title = "Newsvendor"
+        iOS11NavBarDesign()
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,7 +59,16 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        //print(newsvendorProbDist)
+        return pickerData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         newsvendorProbDist = pickerData[row]
+        updatePlaceholderText()
+    }
+    
+    func updatePlaceholderText() {
         if newsvendorProbDist == "Poisson (λ)" {
             newsvendorMu.placeholder = "λ"
             newsvendorSigma.placeholder = "√λ"
@@ -64,8 +76,6 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
             newsvendorMu.placeholder = "μ"
             newsvendorSigma.placeholder = "σ"
         }
-        //print(newsvendorProbDist)
-        return pickerData[row]
     }
     
     @IBAction func newsvendorCalculateButtonPress(_ sender: Any) {
@@ -133,6 +143,15 @@ class NewsvendorViewController: UIViewController, UIPickerViewDelegate, UIPicker
                 self.alertController!.addAction(OKAction)
                 self.present(self.alertController!, animated: true, completion:nil)
             }
+        }
+    }
+    
+    func iOS11NavBarDesign() {
+        let deviceType: String = getDeviceScreenType()
+        if deviceType == "iPhone5.8" || deviceType == "iPhone5.5" || deviceType == "iPhone4.7" {
+            self.navigationController?.navigationBar.topItem?.title = "Newsvendor"
+            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         }
     }
     

@@ -13,6 +13,7 @@ class eoqInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "About EOQ"
+        navigationItem.largeTitleDisplayMode = .never
 
         // Do any additional setup after loading the view.
     }
