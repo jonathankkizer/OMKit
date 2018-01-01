@@ -290,7 +290,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqX-7b-1Gh">
-                                <rect key="frame" x="142" y="475" width="37" height="30"/>
+                                <rect key="frame" x="142" y="475" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="eoqClearButton:" destination="2jT-5N-Taf" eventType="touchUpInside" id="NB2-h0-ax1"/>
@@ -313,7 +313,6 @@
                             <constraint firstItem="bWF-eR-Wti" firstAttribute="leading" secondItem="eok-UE-eR8" secondAttribute="trailing" constant="49" id="9n8-Px-8JH"/>
                             <constraint firstItem="gvx-jS-v5U" firstAttribute="top" secondItem="Rdf-Pl-zFF" secondAttribute="bottom" constant="8" symbolic="YES" id="ASG-9X-Bh1"/>
                             <constraint firstItem="EWc-EG-Rl6" firstAttribute="trailing" secondItem="elT-31-n9E" secondAttribute="trailing" id="Dbi-xQ-ghA"/>
-                            <constraint firstItem="1EN-9x-afZ" firstAttribute="trailing" secondItem="uqX-7b-1Gh" secondAttribute="trailing" constant="141" id="DkH-qs-JJA"/>
                             <constraint firstItem="9SK-U9-pW6" firstAttribute="trailing" secondItem="3bj-Tq-Znw" secondAttribute="trailing" id="FYO-Jf-4cg"/>
                             <constraint firstItem="gvx-jS-v5U" firstAttribute="leading" secondItem="Rdf-Pl-zFF" secondAttribute="leading" id="Gkl-Va-dkH"/>
                             <constraint firstItem="Rdf-Pl-zFF" firstAttribute="top" secondItem="1EN-9x-afZ" secondAttribute="top" constant="46" id="Ifc-J6-hL0"/>
@@ -331,6 +330,7 @@
                             <constraint firstItem="eok-UE-eR8" firstAttribute="top" secondItem="3bj-Tq-Znw" secondAttribute="bottom" constant="8" symbolic="YES" id="TdL-Hb-RIH"/>
                             <constraint firstItem="3bj-Tq-Znw" firstAttribute="top" secondItem="elT-31-n9E" secondAttribute="bottom" constant="15" id="Ttv-rU-lx5"/>
                             <constraint firstItem="Rdf-Pl-zFF" firstAttribute="top" secondItem="bas-xH-QfA" secondAttribute="bottom" constant="8" symbolic="YES" id="UCw-Fz-k9J"/>
+                            <constraint firstItem="1EN-9x-afZ" firstAttribute="trailing" secondItem="uqX-7b-1Gh" secondAttribute="trailing" constant="142" id="XlI-gZ-zAN"/>
                             <constraint firstItem="gT0-dK-1nQ" firstAttribute="top" secondItem="h14-Hx-jZS" secondAttribute="bottom" constant="8" symbolic="YES" id="Y6y-Gy-QAW"/>
                             <constraint firstItem="Uez-Po-R5C" firstAttribute="leading" secondItem="eok-UE-eR8" secondAttribute="leading" constant="-2" id="aER-R6-h32"/>
                             <constraint firstItem="bMZ-nO-efN" firstAttribute="leading" secondItem="eok-UE-eR8" secondAttribute="leading" id="cXQ-OF-j0B"/>
@@ -339,6 +339,7 @@
                             <constraint firstItem="vCF-Oi-LbH" firstAttribute="leading" secondItem="bMZ-nO-efN" secondAttribute="leading" id="fHT-Zd-07s"/>
                             <constraint firstItem="h14-Hx-jZS" firstAttribute="leading" secondItem="uMZ-Q1-2o2" secondAttribute="leading" id="hYx-aA-P43"/>
                             <constraint firstItem="U6E-cn-5dM" firstAttribute="centerY" secondItem="uMZ-Q1-2o2" secondAttribute="centerY" id="hqM-Z0-MVM"/>
+                            <constraint firstItem="uqX-7b-1Gh" firstAttribute="leading" secondItem="1EN-9x-afZ" secondAttribute="leading" constant="142" id="hvT-Sc-TAP"/>
                             <constraint firstItem="9SK-U9-pW6" firstAttribute="leading" secondItem="1EN-9x-afZ" secondAttribute="leading" constant="6" id="iiv-Ew-flU"/>
                             <constraint firstItem="uDU-7z-GaW" firstAttribute="leading" secondItem="1EN-9x-afZ" secondAttribute="leading" constant="8" id="jMm-4U-vcN"/>
                             <constraint firstItem="h14-Hx-jZS" firstAttribute="centerY" secondItem="oyJ-5c-lMS" secondAttribute="centerY" id="jrQ-RN-qq7"/>
