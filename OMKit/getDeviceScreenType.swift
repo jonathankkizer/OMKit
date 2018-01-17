@@ -34,7 +34,15 @@ func getDeviceScreenType() -> String {
     } else if screenWidth == 320.000000 && screenHeight == 568.000000 {
         print("iPhone5S size")
         return "iPhone4.0"
+    } else if screenWidth == 834.000000 && screenHeight == 1112.000000 {
+        print("iPad10.5 size")
+        return "iPad10.5"
+    } else if screenWidth == 1024.000000 && screenHeight == 1366.000000 {
+        print ("iPad12.9 size")
+        return "iPad12.9"
+    } else if screenWidth == 768.000000 && screenHeight == 1024.000000 {
+        print("iPad9.7 size")
+        return "iPad9.7"
     }
-    
     return "Unknown"
 }

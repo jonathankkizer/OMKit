@@ -118,7 +118,7 @@ class AverageInventoryViewController: UIViewController {
     
     func iOS11NavBarDesign() {
         let deviceType: String = getDeviceScreenType()
-        if deviceType == "iPhone5.8" || deviceType == "iPhone5.5" || deviceType == "iPhone4.7" {
+        if deviceType == "iPhone5.8" || deviceType == "iPhone5.5" || deviceType == "iPhone4.7" || deviceType == "iPad12.9" || deviceType == "iPad10.5" || deviceType == "iPad9.7" {
             self.navigationController?.navigationBar.topItem?.title = "Inventory Level"
             navigationController?.navigationBar.prefersLargeTitles = true
             navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
